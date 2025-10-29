@@ -42,7 +42,7 @@ class Config:
     seed:     int = 42
 
     dropout: float = 0.1
-    num_workers: int = 4          # 服务器上可调大些（2/4/8）
+    num_workers: int = 8          # 服务器上可调大些（2/4/8）
     use_grad_ckpt: bool = False   # 是否开启 encoder 的梯度检查点（省显存，略慢）
     try_compile: bool = False     # PyTorch 2.3+ 可尝试 torch.compile
 
