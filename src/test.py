@@ -38,5 +38,5 @@ def report_text_len(csv_path: str, text_col: str = "text"):
 
 if __name__ == "__main__":
     # 用法示例：python test.py 时自行修改路径
-    report_text_len("../data/output/track_a/subtask_1/dev_pairs.csv")
-    report_text_len("../data/output/track_a/subtask_1/train_pairs.csv")
+    report_text_len("../data/output/track_a/subtask_2/dev_pairs.csv")
+    report_text_len("../data/output/track_a/subtask_2/train_pairs.csv")

@@ -87,7 +87,8 @@ class TrainDataset(Dataset):
 # 测试集数据处理
 class DevDataset(Dataset):
     def __init__(self, df: pd.DataFrame, max_len: int):
-        self.df = df.reset_index(drop=True); self.max_len = max_len
+        self.df = df.reset_index(drop=True)
+        self.max_len = max_len
     def __len__(self): return len(self.df)
     def __getitem__(self, i):
         r = self.df.iloc[i]

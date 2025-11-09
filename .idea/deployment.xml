@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="cuizhibin@10.50.1.143:22 password (2)" useTempFile="true" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="A6000">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/cuizhibin/projects/DimABSA2026" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cuizhibin@10.50.1.140:22 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/cuizhibin/projects/DimABSA2026" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cuizhibin@10.50.1.143:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/cuizhibin/projects/DimABSA2026" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cuizhibin@10.50.1.143:22 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_378" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

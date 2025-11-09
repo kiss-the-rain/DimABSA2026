@@ -1,0 +1,400 @@
+{"ID": "lap26_aspect_va_dev_1", "Aspect_VA": [{"Aspect": "touchscreen", "VA": "6.89#6.98"}]}
+{"ID": "lap26_aspect_va_dev_2", "Aspect_VA": [{"Aspect": "HP", "VA": "2.81#6.44"}]}
+{"ID": "lap26_aspect_va_dev_3", "Aspect_VA": [{"Aspect": "keyboard", "VA": "6.63#6.77"}]}
+{"ID": "lap26_aspect_va_dev_4", "Aspect_VA": [{"Aspect": "screen size", "VA": "6.61#6.70"}]}
+{"ID": "lap26_aspect_va_dev_5", "Aspect_VA": [{"Aspect": "Lenovo", "VA": "7.40#7.43"}]}
+{"ID": "lap26_aspect_va_dev_6", "Aspect_VA": [{"Aspect": "sound", "VA": "7.37#7.37"}]}
+{"ID": "lap26_aspect_va_dev_7", "Aspect_VA": [{"Aspect": "quality", "VA": "7.79#7.74"}]}
+{"ID": "lap26_aspect_va_dev_8", "Aspect_VA": [{"Aspect": "on screen keyboard", "VA": "7.14#7.21"}]}
+{"ID": "lap26_aspect_va_dev_9", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.65#7.70"}]}
+{"ID": "lap26_aspect_va_dev_10", "Aspect_VA": [{"Aspect": "functionality of the trackpad", "VA": "7.10#7.20"}]}
+{"ID": "lap26_aspect_va_dev_11", "Aspect_VA": [{"Aspect": "new Lenovo", "VA": "7.15#7.25"}]}
+{"ID": "lap26_aspect_va_dev_12", "Aspect_VA": [{"Aspect": "touch screen", "VA": "7.26#7.32"}, {"Aspect": "screen", "VA": "7.16#7.24"}]}
+{"ID": "lap26_aspect_va_dev_13", "Aspect_VA": [{"Aspect": "Dell 13", "VA": "6.52#6.63"}, {"Aspect": "keyboard", "VA": "4.58#5.42"}, {"Aspect": "HP battery life", "VA": "3.64#5.76"}]}
+{"ID": "lap26_aspect_va_dev_14", "Aspect_VA": [{"Aspect": "Screen clarity", "VA": "7.68#7.70"}, {"Aspect": "Screen", "VA": "7.45#7.46"}]}
+{"ID": "lap26_aspect_va_dev_15", "Aspect_VA": [{"Aspect": "15 HD screen", "VA": "7.09#7.17"}]}
+{"ID": "lap26_aspect_va_dev_16", "Aspect_VA": [{"Aspect": "performance", "VA": "7.41#7.45"}]}
+{"ID": "lap26_aspect_va_dev_17", "Aspect_VA": [{"Aspect": "sound", "VA": "7.46#7.47"}]}
+{"ID": "lap26_aspect_va_dev_18", "Aspect_VA": [{"Aspect": "Speakers", "VA": "2.66#6.74"}]}
+{"ID": "lap26_aspect_va_dev_19", "Aspect_VA": [{"Aspect": "Windows 8", "VA": "7.25#7.29"}, {"Aspect": "laptop", "VA": "7.39#7.41"}]}
+{"ID": "lap26_aspect_va_dev_20", "Aspect_VA": [{"Aspect": "HP", "VA": "7.23#7.26"}]}
+{"ID": "lap26_aspect_va_dev_21", "Aspect_VA": [{"Aspect": "Dells", "VA": "7.10#7.17"}]}
+{"ID": "lap26_aspect_va_dev_22", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.69#6.78"}]}
+{"ID": "lap26_aspect_va_dev_23", "Aspect_VA": [{"Aspect": "battery life", "VA": "7.78#7.88"}]}
+{"ID": "lap26_aspect_va_dev_24", "Aspect_VA": [{"Aspect": "graphics", "VA": "6.90#6.97"}, {"Aspect": "startup", "VA": "7.32#7.40"}]}
+{"ID": "lap26_aspect_va_dev_25", "Aspect_VA": [{"Aspect": "color", "VA": "7.38#7.38"}, {"Aspect": "definition", "VA": "7.13#7.16"}]}
+{"ID": "lap26_aspect_va_dev_26", "Aspect_VA": [{"Aspect": "notebook", "VA": "7.89#7.85"}]}
+{"ID": "lap26_aspect_va_dev_27", "Aspect_VA": [{"Aspect": "facial recognition", "VA": "7.45#7.49"}]}
+{"ID": "lap26_aspect_va_dev_28", "Aspect_VA": [{"Aspect": "laptops", "VA": "6.42#6.63"}, {"Aspect": "customer service", "VA": "3.00#6.87"}]}
+{"ID": "lap26_aspect_va_dev_29", "Aspect_VA": [{"Aspect": "screen", "VA": "4.69#5.46"}]}
+{"ID": "lap26_aspect_va_dev_30", "Aspect_VA": [{"Aspect": "memory", "VA": "5.88#5.97"}, {"Aspect": "processing power", "VA": "5.49#5.66"}]}
+{"ID": "lap26_aspect_va_dev_31", "Aspect_VA": [{"Aspect": "Lenovo tech support", "VA": "3.22#6.28"}]}
+{"ID": "lap26_aspect_va_dev_32", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.80#7.80"}]}
+{"ID": "lap26_aspect_va_dev_33", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.74#6.80"}, {"Aspect": "screen", "VA": "6.91#6.92"}]}
+{"ID": "lap26_aspect_va_dev_34", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.22#7.24"}]}
+{"ID": "lap26_aspect_va_dev_35", "Aspect_VA": [{"Aspect": "ASUS hardware", "VA": "7.40#7.40"}]}
+{"ID": "lap26_aspect_va_dev_36", "Aspect_VA": [{"Aspect": "HP 17.3 Inch Laptop Computer", "VA": "6.70#6.80"}]}
+{"ID": "lap26_aspect_va_dev_37", "Aspect_VA": [{"Aspect": "screen", "VA": "7.27#7.29"}, {"Aspect": "keyboard", "VA": "7.15#7.18"}, {"Aspect": "track pad", "VA": "7.10#7.13"}, {"Aspect": "speed", "VA": "6.99#6.98"}, {"Aspect": "memory", "VA": "7.00#7.02"}]}
+{"ID": "lap26_aspect_va_dev_38", "Aspect_VA": [{"Aspect": "500GB SSD", "VA": "7.22#7.30"}, {"Aspect": "capacity", "VA": "7.25#7.30"}]}
+{"ID": "lap26_aspect_va_dev_39", "Aspect_VA": [{"Aspect": "speed", "VA": "7.48#7.52"}, {"Aspect": "battery life", "VA": "7.79#7.84"}]}
+{"ID": "lap26_aspect_va_dev_40", "Aspect_VA": [{"Aspect": "battery life", "VA": "8.08#8.10"}]}
+{"ID": "lap26_aspect_va_dev_41", "Aspect_VA": [{"Aspect": "ram", "VA": "7.00#7.04"}, {"Aspect": "drive", "VA": "6.93#6.95"}, {"Aspect": "machine", "VA": "7.16#7.26"}]}
+{"ID": "lap26_aspect_va_dev_42", "Aspect_VA": [{"Aspect": "new computer", "VA": "7.45#7.54"}]}
+{"ID": "lap26_aspect_va_dev_43", "Aspect_VA": [{"Aspect": "chrome book", "VA": "7.27#7.30"}]}
+{"ID": "lap26_aspect_va_dev_44", "Aspect_VA": [{"Aspect": "price", "VA": "6.90#6.93"}, {"Aspect": "laptop", "VA": "7.18#7.19"}]}
+{"ID": "lap26_aspect_va_dev_45", "Aspect_VA": [{"Aspect": "battery life ", "VA": "7.42#7.46"}]}
+{"ID": "lap26_aspect_va_dev_46", "Aspect_VA": [{"Aspect": "Battery life", "VA": "2.60#7.08"}]}
+{"ID": "lap26_aspect_va_dev_47", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.78#6.81"}]}
+{"ID": "lap26_aspect_va_dev_48", "Aspect_VA": [{"Aspect": "HP Pavilion laptop", "VA": "7.49#7.50"}]}
+{"ID": "lap26_aspect_va_dev_49", "Aspect_VA": [{"Aspect": "battery life", "VA": "7.08#7.17"}]}
+{"ID": "lap26_aspect_va_dev_50", "Aspect_VA": [{"Aspect": "Boot-up", "VA": "7.53#7.66"}]}
+{"ID": "lap26_aspect_va_dev_51", "Aspect_VA": [{"Aspect": "display", "VA": "7.45#7.52"}, {"Aspect": "boot times", "VA": "7.33#7.43"}]}
+{"ID": "lap26_aspect_va_dev_52", "Aspect_VA": [{"Aspect": "lenovo", "VA": "6.60#6.69"}]}
+{"ID": "lap26_aspect_va_dev_53", "Aspect_VA": [{"Aspect": "ACER", "VA": "4.05#5.60"}, {"Aspect": "ACER PRODUCT", "VA": "4.11#5.59"}]}
+{"ID": "lap26_aspect_va_dev_54", "Aspect_VA": [{"Aspect": "Customer service", "VA": "8.02#8.01"}]}
+{"ID": "lap26_aspect_va_dev_55", "Aspect_VA": [{"Aspect": "screen", "VA": "6.71#6.77"}, {"Aspect": "design", "VA": "6.60#6.58"}, {"Aspect": "laptop", "VA": "6.48#6.56"}]}
+{"ID": "lap26_aspect_va_dev_56", "Aspect_VA": [{"Aspect": "windows 10", "VA": "7.34#7.40"}]}
+{"ID": "lap26_aspect_va_dev_57", "Aspect_VA": [{"Aspect": "HP laptop", "VA": "7.43#7.46"}]}
+{"ID": "lap26_aspect_va_dev_58", "Aspect_VA": [{"Aspect": "Battery life", "VA": "6.60#6.72"}]}
+{"ID": "lap26_aspect_va_dev_59", "Aspect_VA": [{"Aspect": "backlit keyboard", "VA": "7.65#7.70"}]}
+{"ID": "lap26_aspect_va_dev_60", "Aspect_VA": [{"Aspect": "HP Stream Laptop", "VA": "5.43#5.65"}]}
+{"ID": "lap26_aspect_va_dev_61", "Aspect_VA": [{"Aspect": "screen quality", "VA": "7.29#7.33"}, {"Aspect": "size", "VA": "7.31#7.34"}, {"Aspect": "sound quality", "VA": "7.37#7.38"}]}
+{"ID": "lap26_aspect_va_dev_62", "Aspect_VA": [{"Aspect": "Toshiba KiraBook", "VA": "6.40#6.38"}]}
+{"ID": "lap26_aspect_va_dev_63", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.91#7.94"}]}
+{"ID": "lap26_aspect_va_dev_64", "Aspect_VA": [{"Aspect": "Battery life", "VA": "4.77#5.47"}]}
+{"ID": "lap26_aspect_va_dev_65", "Aspect_VA": [{"Aspect": "screen", "VA": "7.58#7.61"}, {"Aspect": "colors", "VA": "7.18#7.23"}]}
+{"ID": "lap26_aspect_va_dev_66", "Aspect_VA": [{"Aspect": "HP Chromebook", "VA": "7.87#7.91"}]}
+{"ID": "lap26_aspect_va_dev_67", "Aspect_VA": [{"Aspect": "Touch screen", "VA": "7.28#7.28"}]}
+{"ID": "lap26_aspect_va_dev_68", "Aspect_VA": [{"Aspect": "Laptop", "VA": "6.14#6.16"}]}
+{"ID": "lap26_aspect_va_dev_69", "Aspect_VA": [{"Aspect": "Windows 10 home", "VA": "7.37#7.48"}]}
+{"ID": "lap26_aspect_va_dev_70", "Aspect_VA": [{"Aspect": "screen", "VA": "4.97#5.49"}]}
+{"ID": "lap26_aspect_va_dev_71", "Aspect_VA": [{"Aspect": "Touchscreen", "VA": "7.16#7.27"}, {"Aspect": "mouse", "VA": "7.23#7.38"}]}
+{"ID": "lap26_aspect_va_dev_72", "Aspect_VA": [{"Aspect": "256gb SSD", "VA": "7.66#7.71"}]}
+{"ID": "lap26_aspect_va_dev_73", "Aspect_VA": [{"Aspect": "Build quality", "VA": "7.06#7.10"}, {"Aspect": "keyboard", "VA": "7.08#7.13"}, {"Aspect": "numberpad", "VA": "6.72#6.80"}]}
+{"ID": "lap26_aspect_va_dev_74", "Aspect_VA": [{"Aspect": "Asus laptops", "VA": "6.73#6.72"}]}
+{"ID": "lap26_aspect_va_dev_75", "Aspect_VA": [{"Aspect": "high", "VA": "7.51#7.58"}, {"Aspect": "laptop", "VA": "7.54#7.59"}]}
+{"ID": "lap26_aspect_va_dev_76", "Aspect_VA": [{"Aspect": "Screen resolution", "VA": "6.56#6.66"}]}
+{"ID": "lap26_aspect_va_dev_77", "Aspect_VA": [{"Aspect": "storage", "VA": "7.51#7.53"}, {"Aspect": "computer", "VA": "7.40#7.46"}, {"Aspect": "response", "VA": "7.37#7.39"}]}
+{"ID": "lap26_aspect_va_dev_78", "Aspect_VA": [{"Aspect": "computer", "VA": "7.30#7.26"}]}
+{"ID": "lap26_aspect_va_dev_79", "Aspect_VA": [{"Aspect": "company", "VA": "6.57#6.73"}]}
+{"ID": "lap26_aspect_va_dev_80", "Aspect_VA": [{"Aspect": "laptop", "VA": "3.49#5.84"}]}
+{"ID": "lap26_aspect_va_dev_81", "Aspect_VA": [{"Aspect": "illumination", "VA": "7.37#7.47"}, {"Aspect": "apps", "VA": "7.19#7.25"}]}
+{"ID": "lap26_aspect_va_dev_82", "Aspect_VA": [{"Aspect": "Battery life", "VA": "7.88#7.99"}]}
+{"ID": "lap26_aspect_va_dev_83", "Aspect_VA": [{"Aspect": "ports", "VA": "7.44#7.44"}, {"Aspect": "graphics", "VA": "7.64#7.63"}, {"Aspect": "battery life", "VA": "7.71#7.72"}]}
+{"ID": "lap26_aspect_va_dev_84", "Aspect_VA": [{"Aspect": "delivery", "VA": "7.50#7.50"}]}
+{"ID": "lap26_aspect_va_dev_85", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.51#7.57"}]}
+{"ID": "lap26_aspect_va_dev_86", "Aspect_VA": [{"Aspect": "notebook", "VA": "4.09#6.05"}, {"Aspect": "loading", "VA": "3.50#6.17"}, {"Aspect": "processing", "VA": "3.51#6.08"}]}
+{"ID": "lap26_aspect_va_dev_87", "Aspect_VA": [{"Aspect": "touchscreen", "VA": "7.17#7.27"}, {"Aspect": "display graphics", "VA": "7.31#7.43"}]}
+{"ID": "lap26_aspect_va_dev_88", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.17#7.18"}]}
+{"ID": "lap26_aspect_va_dev_89", "Aspect_VA": [{"Aspect": "screen's color palette", "VA": "7.96#8.02"}, {"Aspect": "speakers", "VA": "7.86#7.89"}]}
+{"ID": "lap26_aspect_va_dev_90", "Aspect_VA": [{"Aspect": "size", "VA": "6.32#6.48"}, {"Aspect": "sharpness of the display", "VA": "3.92#5.59"}]}
+{"ID": "lap26_aspect_va_dev_91", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.51#7.48"}]}
+{"ID": "lap26_aspect_va_dev_92", "Aspect_VA": [{"Aspect": "Keyboard", "VA": "5.06#5.71"}, {"Aspect": "performance", "VA": "6.39#6.51"}]}
+{"ID": "lap26_aspect_va_dev_93", "Aspect_VA": [{"Aspect": "USB A ports", "VA": "6.49#6.52"}]}
+{"ID": "lap26_aspect_va_dev_94", "Aspect_VA": [{"Aspect": "build quality", "VA": "3.45#6.01"}]}
+{"ID": "lap26_aspect_va_dev_95", "Aspect_VA": [{"Aspect": "computer", "VA": "7.45#7.43"}]}
+{"ID": "lap26_aspect_va_dev_96", "Aspect_VA": [{"Aspect": "screen", "VA": "7.42#7.40"}]}
+{"ID": "lap26_aspect_va_dev_97", "Aspect_VA": [{"Aspect": "Screen", "VA": "3.46#5.73"}]}
+{"ID": "lap26_aspect_va_dev_98", "Aspect_VA": [{"Aspect": "computer", "VA": "6.77#6.83"}]}
+{"ID": "lap26_aspect_va_dev_99", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.84#7.01"}, {"Aspect": "touchpad left click", "VA": "4.13#5.79"}]}
+{"ID": "lap26_aspect_va_dev_100", "Aspect_VA": [{"Aspect": "touchscreen", "VA": "6.38#6.55"}, {"Aspect": "convertible aspect", "VA": "6.43#6.60"}]}
+{"ID": "lap26_aspect_va_dev_101", "Aspect_VA": [{"Aspect": "double screen", "VA": "4.67#5.64"}, {"Aspect": "quality of every app", "VA": "7.05#7.05"}]}
+{"ID": "lap26_aspect_va_dev_102", "Aspect_VA": [{"Aspect": "Battery", "VA": "7.41#7.41"}]}
+{"ID": "lap26_aspect_va_dev_103", "Aspect_VA": [{"Aspect": "computer", "VA": "6.77#6.92"}, {"Aspect": "Windows 8", "VA": "3.47#6.93"}]}
+{"ID": "lap26_aspect_va_dev_104", "Aspect_VA": [{"Aspect": "keyboard", "VA": "4.22#5.61"}]}
+{"ID": "lap26_aspect_va_dev_105", "Aspect_VA": [{"Aspect": "trackpad", "VA": "2.40#7.15"}]}
+{"ID": "lap26_aspect_va_dev_106", "Aspect_VA": [{"Aspect": "LAPTOP", "VA": "7.22#7.27"}]}
+{"ID": "lap26_aspect_va_dev_107", "Aspect_VA": [{"Aspect": "PC", "VA": "7.48#7.50"}]}
+{"ID": "lap26_aspect_va_dev_108", "Aspect_VA": [{"Aspect": "screen quality", "VA": "2.87#6.81"}]}
+{"ID": "lap26_aspect_va_dev_109", "Aspect_VA": [{"Aspect": "laptop", "VA": "3.55#5.80"}]}
+{"ID": "lap26_aspect_va_dev_110", "Aspect_VA": [{"Aspect": "battery life", "VA": "7.91#7.96"}, {"Aspect": "Keyboard", "VA": "7.40#7.45"}]}
+{"ID": "lap26_aspect_va_dev_111", "Aspect_VA": [{"Aspect": "computer", "VA": "7.60#7.65"}]}
+{"ID": "lap26_aspect_va_dev_112", "Aspect_VA": [{"Aspect": "Chromebooks", "VA": "7.05#7.03"}]}
+{"ID": "lap26_aspect_va_dev_113", "Aspect_VA": [{"Aspect": "weight of the laptop", "VA": "4.38#5.03"}]}
+{"ID": "lap26_aspect_va_dev_114", "Aspect_VA": [{"Aspect": "color", "VA": "7.67#7.68"}]}
+{"ID": "lap26_aspect_va_dev_115", "Aspect_VA": [{"Aspect": "Graphics", "VA": "6.95#7.01"}]}
+{"ID": "lap26_aspect_va_dev_116", "Aspect_VA": [{"Aspect": "cooling fan", "VA": "3.64#6.11"}]}
+{"ID": "lap26_aspect_va_dev_117", "Aspect_VA": [{"Aspect": "computer", "VA": "6.90#6.89"}, {"Aspect": "price", "VA": "7.02#6.94"}]}
+{"ID": "lap26_aspect_va_dev_118", "Aspect_VA": [{"Aspect": "display", "VA": "7.43#7.49"}]}
+{"ID": "lap26_aspect_va_dev_119", "Aspect_VA": [{"Aspect": "keyboard", "VA": "3.81#5.82"}]}
+{"ID": "lap26_aspect_va_dev_120", "Aspect_VA": [{"Aspect": "laptop", "VA": "3.64#5.76"}]}
+{"ID": "lap26_aspect_va_dev_121", "Aspect_VA": [{"Aspect": "screen", "VA": "7.73#7.76"}, {"Aspect": "touchpad", "VA": "7.39#7.46"}, {"Aspect": "keyboard", "VA": "7.38#7.44"}, {"Aspect": "Toshiba Chromebook 2", "VA": "7.40#7.41"}]}
+{"ID": "lap26_aspect_va_dev_122", "Aspect_VA": [{"Aspect": "battery life", "VA": "7.10#7.23"}]}
+{"ID": "lap26_aspect_va_dev_123", "Aspect_VA": [{"Aspect": "quality", "VA": "6.97#7.01"}, {"Aspect": "processor", "VA": "7.13#7.16"}]}
+{"ID": "lap26_aspect_va_dev_124", "Aspect_VA": [{"Aspect": "product", "VA": "3.48#5.96"}]}
+{"ID": "lap26_aspect_va_dev_125", "Aspect_VA": [{"Aspect": "Windows 8.1", "VA": "7.10#7.16"}]}
+{"ID": "lap26_aspect_va_dev_126", "Aspect_VA": [{"Aspect": "Asus fingerprint reader", "VA": "6.47#6.33"}]}
+{"ID": "lap26_aspect_va_dev_127", "Aspect_VA": [{"Aspect": "battery life", "VA": "7.72#7.79"}]}
+{"ID": "lap26_aspect_va_dev_128", "Aspect_VA": [{"Aspect": "screen", "VA": "7.29#7.34"}, {"Aspect": "8GB memory", "VA": "7.58#7.61"}, {"Aspect": "1TB HDD", "VA": "6.97#6.92"}, {"Aspect": "windows 10", "VA": "7.23#7.19"}, {"Aspect": "price", "VA": "7.17#7.14"}]}
+{"ID": "lap26_aspect_va_dev_129", "Aspect_VA": [{"Aspect": "mother board", "VA": "3.53#6.18"}]}
+{"ID": "lap26_aspect_va_dev_130", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.52#7.55"}]}
+{"ID": "lap26_aspect_va_dev_131", "Aspect_VA": [{"Aspect": "notebook", "VA": "6.75#6.81"}, {"Aspect": "tablet", "VA": "6.42#6.52"}]}
+{"ID": "lap26_aspect_va_dev_132", "Aspect_VA": [{"Aspect": "chromebook", "VA": "7.38#7.35"}]}
+{"ID": "lap26_aspect_va_dev_133", "Aspect_VA": [{"Aspect": "Keyboard back lights", "VA": "4.14#5.14"}]}
+{"ID": "lap26_aspect_va_dev_134", "Aspect_VA": [{"Aspect": "computer", "VA": "3.01#6.34"}]}
+{"ID": "lap26_aspect_va_dev_135", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.13#7.18"}, {"Aspect": "build", "VA": "7.32#7.34"}]}
+{"ID": "lap26_aspect_va_dev_136", "Aspect_VA": [{"Aspect": "features", "VA": "6.96#6.89"}, {"Aspect": "processing power", "VA": "7.38#7.39"}, {"Aspect": "ram", "VA": "7.44#7.48"}]}
+{"ID": "lap26_aspect_va_dev_137", "Aspect_VA": [{"Aspect": "Chromebook", "VA": "5.57#5.69"}]}
+{"ID": "lap26_aspect_va_dev_138", "Aspect_VA": [{"Aspect": "machine", "VA": "7.50#7.57"}]}
+{"ID": "lap26_aspect_va_dev_139", "Aspect_VA": [{"Aspect": "processing speed", "VA": "6.64#6.74"}]}
+{"ID": "lap26_aspect_va_dev_140", "Aspect_VA": [{"Aspect": "chromebook", "VA": "7.44#7.44"}]}
+{"ID": "lap26_aspect_va_dev_141", "Aspect_VA": [{"Aspect": "performance", "VA": "7.65#7.65"}]}
+{"ID": "lap26_aspect_va_dev_142", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.08#6.40"}]}
+{"ID": "lap26_aspect_va_dev_143", "Aspect_VA": [{"Aspect": "Dell Chromebook", "VA": "7.40#7.48"}]}
+{"ID": "lap26_aspect_va_dev_144", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.34#7.35"}]}
+{"ID": "lap26_aspect_va_dev_145", "Aspect_VA": [{"Aspect": "memory", "VA": "6.60#6.58"}, {"Aspect": "HD space", "VA": "6.67#6.66"}]}
+{"ID": "lap26_aspect_va_dev_146", "Aspect_VA": [{"Aspect": "screen", "VA": "7.11#7.22"}, {"Aspect": "keyboard", "VA": "7.66#7.77"}, {"Aspect": "battery life", "VA": "6.98#7.13"}, {"Aspect": "processor", "VA": "7.12#7.22"}, {"Aspect": "storage", "VA": "7.21#7.31"}]}
+{"ID": "lap26_aspect_va_dev_147", "Aspect_VA": [{"Aspect": "HP", "VA": "7.40#7.48"}]}
+{"ID": "lap26_aspect_va_dev_148", "Aspect_VA": [{"Aspect": "Backlight", "VA": "6.77#6.84"}]}
+{"ID": "lap26_aspect_va_dev_149", "Aspect_VA": [{"Aspect": "computer", "VA": "7.75#7.77"}]}
+{"ID": "lap26_aspect_va_dev_150", "Aspect_VA": [{"Aspect": "Hard drive", "VA": "3.18#6.34"}]}
+{"ID": "lap26_aspect_va_dev_151", "Aspect_VA": [{"Aspect": "machine", "VA": "7.69#7.72"}]}
+{"ID": "lap26_aspect_va_dev_152", "Aspect_VA": [{"Aspect": "computer", "VA": "3.36#6.12"}]}
+{"ID": "lap26_aspect_va_dev_153", "Aspect_VA": [{"Aspect": "LAPTOP", "VA": "4.27#5.68"}]}
+{"ID": "lap26_aspect_va_dev_154", "Aspect_VA": [{"Aspect": "laptop", "VA": "4.24#5.64"}]}
+{"ID": "lap26_aspect_va_dev_155", "Aspect_VA": [{"Aspect": "processing", "VA": "7.74#7.75"}, {"Aspect": "systems", "VA": "7.49#7.55"}]}
+{"ID": "lap26_aspect_va_dev_156", "Aspect_VA": [{"Aspect": "trackpad", "VA": "3.75#5.80"}]}
+{"ID": "lap26_aspect_va_dev_157", "Aspect_VA": [{"Aspect": "screen", "VA": "7.93#7.96"}]}
+{"ID": "lap26_aspect_va_dev_158", "Aspect_VA": [{"Aspect": "keyboard", "VA": "6.79#6.89"}]}
+{"ID": "lap26_aspect_va_dev_159", "Aspect_VA": [{"Aspect": "Macbook", "VA": "6.44#6.49"}]}
+{"ID": "lap26_aspect_va_dev_160", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.90#7.00"}]}
+{"ID": "lap26_aspect_va_dev_161", "Aspect_VA": [{"Aspect": "shipping", "VA": "7.46#7.49"}, {"Aspect": "quality", "VA": "7.45#7.48"}]}
+{"ID": "lap26_aspect_va_dev_162", "Aspect_VA": [{"Aspect": "device", "VA": "7.57#7.57"}, {"Aspect": "Chromebook", "VA": "7.18#7.19"}]}
+{"ID": "lap26_aspect_va_dev_163", "Aspect_VA": [{"Aspect": "notebook", "VA": "7.79#7.76"}]}
+{"ID": "lap26_aspect_va_dev_164", "Aspect_VA": [{"Aspect": "Windows 10", "VA": "6.93#7.00"}]}
+{"ID": "lap26_aspect_va_dev_165", "Aspect_VA": [{"Aspect": "battery life", "VA": "6.94#7.05"}, {"Aspect": "display", "VA": "6.99#7.01"}]}
+{"ID": "lap26_aspect_va_dev_166", "Aspect_VA": [{"Aspect": "MacBook Pro 15", "VA": "7.96#7.98"}]}
+{"ID": "lap26_aspect_va_dev_167", "Aspect_VA": [{"Aspect": "keyboard", "VA": "6.24#6.28"}, {"Aspect": "keys", "VA": "5.23#5.49"}]}
+{"ID": "lap26_aspect_va_dev_168", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.92#6.87"}]}
+{"ID": "lap26_aspect_va_dev_169", "Aspect_VA": [{"Aspect": "fan", "VA": "4.93#5.45"}]}
+{"ID": "lap26_aspect_va_dev_170", "Aspect_VA": [{"Aspect": "backlit keyboard", "VA": "7.27#7.36"}]}
+{"ID": "lap26_aspect_va_dev_171", "Aspect_VA": [{"Aspect": "new Acer", "VA": "7.38#7.46"}]}
+{"ID": "lap26_aspect_va_dev_172", "Aspect_VA": [{"Aspect": "i5 processor", "VA": "7.29#7.39"}]}
+{"ID": "lap26_aspect_va_dev_173", "Aspect_VA": [{"Aspect": "hardware on this computer", "VA": "6.28#6.42"}]}
+{"ID": "lap26_aspect_va_dev_174", "Aspect_VA": [{"Aspect": "price", "VA": "6.96#6.97"}]}
+{"ID": "lap26_aspect_va_dev_175", "Aspect_VA": [{"Aspect": "display", "VA": "2.60#6.99"}]}
+{"ID": "lap26_aspect_va_dev_176", "Aspect_VA": [{"Aspect": "value", "VA": "7.29#7.31"}]}
+{"ID": "lap26_aspect_va_dev_177", "Aspect_VA": [{"Aspect": "battery life", "VA": "4.31#5.96"}]}
+{"ID": "lap26_aspect_va_dev_178", "Aspect_VA": [{"Aspect": "windows 8", "VA": "4.10#5.35"}]}
+{"ID": "lap26_aspect_va_dev_179", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.74#6.82"}]}
+{"ID": "lap26_aspect_va_dev_180", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.89#7.87"}]}
+{"ID": "lap26_aspect_va_dev_181", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.95#7.05"}]}
+{"ID": "lap26_aspect_va_dev_182", "Aspect_VA": [{"Aspect": "Chromebook", "VA": "7.29#7.29"}]}
+{"ID": "lap26_aspect_va_dev_183", "Aspect_VA": [{"Aspect": "battery", "VA": "4.13#5.45"}]}
+{"ID": "lap26_aspect_va_dev_184", "Aspect_VA": [{"Aspect": "Processing", "VA": "7.07#7.16"}, {"Aspect": "lag/delays", "VA": "6.02#6.31"}]}
+{"ID": "lap26_aspect_va_dev_185", "Aspect_VA": [{"Aspect": "Price", "VA": "7.39#7.35"}]}
+{"ID": "lap26_aspect_va_dev_186", "Aspect_VA": [{"Aspect": "32GB of Ram", "VA": "7.16#7.20"}]}
+{"ID": "lap26_aspect_va_dev_187", "Aspect_VA": [{"Aspect": "laptop", "VA": "7.06#7.05"}, {"Aspect": "value", "VA": "7.19#7.16"}]}
+{"ID": "lap26_aspect_va_dev_188", "Aspect_VA": [{"Aspect": "display", "VA": "7.36#7.41"}, {"Aspect": "resolution", "VA": "7.89#7.91"}]}
+{"ID": "lap26_aspect_va_dev_189", "Aspect_VA": [{"Aspect": "Multi color backlit keyboard", "VA": "7.24#7.32"}]}
+{"ID": "lap26_aspect_va_dev_190", "Aspect_VA": [{"Aspect": "features", "VA": "6.99#7.05"}]}
+{"ID": "lap26_aspect_va_dev_191", "Aspect_VA": [{"Aspect": "Graphics", "VA": "7.59#7.58"}, {"Aspect": "volume", "VA": "7.63#7.64"}]}
+{"ID": "lap26_aspect_va_dev_192", "Aspect_VA": [{"Aspect": "keyboard", "VA": "6.92#6.99"}, {"Aspect": "touchpad", "VA": "6.95#7.05"}]}
+{"ID": "lap26_aspect_va_dev_193", "Aspect_VA": [{"Aspect": "Windows 10", "VA": "3.79#5.53"}]}
+{"ID": "lap26_aspect_va_dev_194", "Aspect_VA": [{"Aspect": "Windows 8", "VA": "6.73#6.80"}]}
+{"ID": "lap26_aspect_va_dev_195", "Aspect_VA": [{"Aspect": "speaker", "VA": "6.72#6.71"}]}
+{"ID": "lap26_aspect_va_dev_196", "Aspect_VA": [{"Aspect": "laptop", "VA": "6.76#6.72"}]}
+{"ID": "lap26_aspect_va_dev_197", "Aspect_VA": [{"Aspect": "Apple computer company", "VA": "7.42#7.44"}, {"Aspect": "computer", "VA": "7.46#7.46"}]}
+{"ID": "lap26_aspect_va_dev_198", "Aspect_VA": [{"Aspect": "new touchprint feature", "VA": "6.66#6.81"}]}
+{"ID": "lap26_aspect_va_dev_199", "Aspect_VA": [{"Aspect": "Chromebook", "VA": "7.47#7.47"}]}
+{"ID": "lap26_aspect_va_dev_200", "Aspect_VA": [{"Aspect": "computer", "VA": "7.86#7.91"}]}
+{"ID": "rest26_aspect_va_dev_1", "Aspect_VA": [{"Aspect": "diner food", "VA": "7.41#7.41"}, {"Aspect": "breakfast", "VA": "6.73#6.56"}]}
+{"ID": "rest26_aspect_va_dev_2", "Aspect_VA": [{"Aspect": "food", "VA": "7.61#7.71"}, {"Aspect": "drinks", "VA": "7.56#7.66"}, {"Aspect": "service", "VA": "7.72#7.80"}]}
+{"ID": "rest26_aspect_va_dev_3", "Aspect_VA": [{"Aspect": "burger", "VA": "7.87#7.88"}, {"Aspect": "burger places", "VA": "7.96#7.96"}]}
+{"ID": "rest26_aspect_va_dev_4", "Aspect_VA": [{"Aspect": "Food", "VA": "7.98#8.03"}]}
+{"ID": "rest26_aspect_va_dev_5", "Aspect_VA": [{"Aspect": "regular fries", "VA": "7.52#7.52"}]}
+{"ID": "rest26_aspect_va_dev_6", "Aspect_VA": [{"Aspect": "papaya salad", "VA": "7.77#7.81"}]}
+{"ID": "rest26_aspect_va_dev_7", "Aspect_VA": [{"Aspect": "place", "VA": "7.37#7.39"}, {"Aspect": "recipes", "VA": "7.68#7.69"}]}
+{"ID": "rest26_aspect_va_dev_8", "Aspect_VA": [{"Aspect": "beef noodles", "VA": "3.24#6.14"}, {"Aspect": "fried rice", "VA": "3.55#5.86"}]}
+{"ID": "rest26_aspect_va_dev_9", "Aspect_VA": [{"Aspect": "beer", "VA": "6.66#6.76"}]}
+{"ID": "rest26_aspect_va_dev_10", "Aspect_VA": [{"Aspect": "black bean burger", "VA": "3.62#5.97"}]}
+{"ID": "rest26_aspect_va_dev_11", "Aspect_VA": [{"Aspect": "service", "VA": "6.56#6.63"}]}
+{"ID": "rest26_aspect_va_dev_12", "Aspect_VA": [{"Aspect": "food", "VA": "7.47#7.45"}, {"Aspect": "service", "VA": "7.58#7.57"}]}
+{"ID": "rest26_aspect_va_dev_13", "Aspect_VA": [{"Aspect": "food", "VA": "6.46#6.54"}, {"Aspect": "service", "VA": "3.13#6.53"}]}
+{"ID": "rest26_aspect_va_dev_14", "Aspect_VA": [{"Aspect": "Service", "VA": "3.64#5.95"}]}
+{"ID": "rest26_aspect_va_dev_15", "Aspect_VA": [{"Aspect": "atmosphere", "VA": "7.15#7.17"}, {"Aspect": "service", "VA": "7.49#7.47"}]}
+{"ID": "rest26_aspect_va_dev_16", "Aspect_VA": [{"Aspect": "draft beer selection", "VA": "6.67#6.79"}]}
+{"ID": "rest26_aspect_va_dev_17", "Aspect_VA": [{"Aspect": "donuts", "VA": "6.66#6.47"}]}
+{"ID": "rest26_aspect_va_dev_18", "Aspect_VA": [{"Aspect": "staff", "VA": "7.31#7.40"}]}
+{"ID": "rest26_aspect_va_dev_19", "Aspect_VA": [{"Aspect": "food menu", "VA": "4.67#5.39"}, {"Aspect": "service", "VA": "7.51#7.51"}]}
+{"ID": "rest26_aspect_va_dev_20", "Aspect_VA": [{"Aspect": "place", "VA": "7.79#7.84"}]}
+{"ID": "rest26_aspect_va_dev_21", "Aspect_VA": [{"Aspect": "management", "VA": "7.61#7.71"}, {"Aspect": "service", "VA": "7.91#7.93"}]}
+{"ID": "rest26_aspect_va_dev_22", "Aspect_VA": [{"Aspect": "Chinese food", "VA": "6.97#7.05"}, {"Aspect": "beer selection", "VA": "7.23#7.32"}]}
+{"ID": "rest26_aspect_va_dev_23", "Aspect_VA": [{"Aspect": "Food", "VA": "7.56#7.51"}]}
+{"ID": "rest26_aspect_va_dev_24", "Aspect_VA": [{"Aspect": "FOOD", "VA": "8.00#8.05"}]}
+{"ID": "rest26_aspect_va_dev_25", "Aspect_VA": [{"Aspect": "wait staff", "VA": "7.08#7.21"}, {"Aspect": "prices", "VA": "6.80#6.84"}]}
+{"ID": "rest26_aspect_va_dev_26", "Aspect_VA": [{"Aspect": "restaurant", "VA": "2.42#7.50"}, {"Aspect": "service", "VA": "2.38#7.51"}, {"Aspect": "waiter", "VA": "2.20#7.60"}]}
+{"ID": "rest26_aspect_va_dev_27", "Aspect_VA": [{"Aspect": "food", "VA": "6.86#6.97"}]}
+{"ID": "rest26_aspect_va_dev_28", "Aspect_VA": [{"Aspect": "service", "VA": "3.58#5.62"}, {"Aspect": "pizza", "VA": "2.75#6.31"}]}
+{"ID": "rest26_aspect_va_dev_29", "Aspect_VA": [{"Aspect": "curry", "VA": "3.87#5.78"}, {"Aspect": "sauce", "VA": "3.48#5.84"}, {"Aspect": "goat", "VA": "3.41#6.19"}, {"Aspect": "naan bread", "VA": "4.04#5.84"}]}
+{"ID": "rest26_aspect_va_dev_30", "Aspect_VA": [{"Aspect": "fare", "VA": "3.15#6.50"}, {"Aspect": "real cutlery", "VA": "3.52#5.90"}, {"Aspect": "proper table service", "VA": "3.62#5.72"}, {"Aspect": "glassware", "VA": "3.67#5.82"}]}
+{"ID": "rest26_aspect_va_dev_31", "Aspect_VA": [{"Aspect": "service", "VA": "2.48#7.17"}]}
+{"ID": "rest26_aspect_va_dev_32", "Aspect_VA": [{"Aspect": "customer service", "VA": "7.48#7.51"}]}
+{"ID": "rest26_aspect_va_dev_33", "Aspect_VA": [{"Aspect": "Both meals", "VA": "7.44#7.49"}]}
+{"ID": "rest26_aspect_va_dev_34", "Aspect_VA": [{"Aspect": "food", "VA": "7.43#7.42"}, {"Aspect": "atmosphere", "VA": "7.21#7.19"}]}
+{"ID": "rest26_aspect_va_dev_35", "Aspect_VA": [{"Aspect": "food", "VA": "7.35#7.35"}, {"Aspect": "service", "VA": "7.30#7.26"}]}
+{"ID": "rest26_aspect_va_dev_36", "Aspect_VA": [{"Aspect": "mixed salad salad sandwich", "VA": "7.27#7.35"}]}
+{"ID": "rest26_aspect_va_dev_37", "Aspect_VA": [{"Aspect": "service", "VA": "7.53#7.47"}]}
+{"ID": "rest26_aspect_va_dev_38", "Aspect_VA": [{"Aspect": "general tso chicken", "VA": "7.58#7.64"}]}
+{"ID": "rest26_aspect_va_dev_39", "Aspect_VA": [{"Aspect": "pizza", "VA": "8.03#8.04"}, {"Aspect": "staff", "VA": "7.37#7.45"}]}
+{"ID": "rest26_aspect_va_dev_40", "Aspect_VA": [{"Aspect": "Service", "VA": "7.83#7.88"}]}
+{"ID": "rest26_aspect_va_dev_41", "Aspect_VA": [{"Aspect": "coffee", "VA": "7.92#7.91"}]}
+{"ID": "rest26_aspect_va_dev_42", "Aspect_VA": [{"Aspect": "food", "VA": "7.54#7.60"}, {"Aspect": "business aspect", "VA": "2.35#7.11"}]}
+{"ID": "rest26_aspect_va_dev_43", "Aspect_VA": [{"Aspect": "potato salad", "VA": "6.64#6.72"}, {"Aspect": "mac & cheese", "VA": "3.48#5.79"}]}
+{"ID": "rest26_aspect_va_dev_44", "Aspect_VA": [{"Aspect": "Drinks", "VA": "6.92#6.99"}, {"Aspect": "Prices", "VA": "5.82#5.94"}]}
+{"ID": "rest26_aspect_va_dev_45", "Aspect_VA": [{"Aspect": "food", "VA": "5.70#5.65"}, {"Aspect": "portions", "VA": "5.66#5.66"}, {"Aspect": "dessert", "VA": "5.16#5.29"}]}
+{"ID": "rest26_aspect_va_dev_46", "Aspect_VA": [{"Aspect": "food", "VA": "8.04#8.04"}]}
+{"ID": "rest26_aspect_va_dev_47", "Aspect_VA": [{"Aspect": "entire experience", "VA": "3.27#6.14"}]}
+{"ID": "rest26_aspect_va_dev_48", "Aspect_VA": [{"Aspect": "burgers", "VA": "7.98#7.97"}]}
+{"ID": "rest26_aspect_va_dev_49", "Aspect_VA": [{"Aspect": "place", "VA": "4.68#5.56"}]}
+{"ID": "rest26_aspect_va_dev_50", "Aspect_VA": [{"Aspect": "Hickory burger", "VA": "7.85#7.90"}]}
+{"ID": "rest26_aspect_va_dev_51", "Aspect_VA": [{"Aspect": "staff", "VA": "7.26#7.34"}, {"Aspect": "atmosphere", "VA": "7.49#7.53"}, {"Aspect": "building", "VA": "7.30#7.34"}, {"Aspect": "environment", "VA": "7.47#7.52"}]}
+{"ID": "rest26_aspect_va_dev_52", "Aspect_VA": [{"Aspect": "place", "VA": "7.46#7.51"}, {"Aspect": "ambience", "VA": "7.55#7.56"}, {"Aspect": "food", "VA": "7.57#7.59"}, {"Aspect": "service", "VA": "7.53#7.53"}]}
+{"ID": "rest26_aspect_va_dev_53", "Aspect_VA": [{"Aspect": "atmosphere", "VA": "7.62#7.63"}, {"Aspect": "staff", "VA": "7.68#7.69"}, {"Aspect": "food", "VA": "7.89#7.89"}]}
+{"ID": "rest26_aspect_va_dev_54", "Aspect_VA": [{"Aspect": "drinks", "VA": "7.58#7.60"}, {"Aspect": "salsa", "VA": "7.66#7.70"}, {"Aspect": "salads", "VA": "6.97#6.95"}]}
+{"ID": "rest26_aspect_va_dev_55", "Aspect_VA": [{"Aspect": "Beef brisket sandwich", "VA": "7.80#7.86"}]}
+{"ID": "rest26_aspect_va_dev_56", "Aspect_VA": [{"Aspect": "flavor", "VA": "6.81#6.88"}, {"Aspect": "amount of chicken in the pita", "VA": "7.42#7.51"}]}
+{"ID": "rest26_aspect_va_dev_57", "Aspect_VA": [{"Aspect": "curry chicken", "VA": "3.72#5.78"}]}
+{"ID": "rest26_aspect_va_dev_58", "Aspect_VA": [{"Aspect": "onion rings", "VA": "7.08#7.12"}]}
+{"ID": "rest26_aspect_va_dev_59", "Aspect_VA": [{"Aspect": "Prices", "VA": "6.69#6.77"}]}
+{"ID": "rest26_aspect_va_dev_60", "Aspect_VA": [{"Aspect": "food", "VA": "6.10#6.24"}, {"Aspect": "people", "VA": "7.21#7.27"}]}
+{"ID": "rest26_aspect_va_dev_61", "Aspect_VA": [{"Aspect": "chocolate cake", "VA": "7.70#7.69"}]}
+{"ID": "rest26_aspect_va_dev_62", "Aspect_VA": [{"Aspect": "ambience", "VA": "7.83#7.86"}]}
+{"ID": "rest26_aspect_va_dev_63", "Aspect_VA": [{"Aspect": "entire staff", "VA": "7.17#7.32"}]}
+{"ID": "rest26_aspect_va_dev_64", "Aspect_VA": [{"Aspect": "service", "VA": "6.85#6.92"}, {"Aspect": "bartenders", "VA": "7.09#7.19"}]}
+{"ID": "rest26_aspect_va_dev_65", "Aspect_VA": [{"Aspect": "staff", "VA": "7.70#7.82"}]}
+{"ID": "rest26_aspect_va_dev_66", "Aspect_VA": [{"Aspect": "food", "VA": "3.61#5.76"}]}
+{"ID": "rest26_aspect_va_dev_67", "Aspect_VA": [{"Aspect": "falafel wrap", "VA": "7.23#7.29"}]}
+{"ID": "rest26_aspect_va_dev_68", "Aspect_VA": [{"Aspect": "appetizers", "VA": "7.73#7.77"}, {"Aspect": "dipping sauce", "VA": "7.27#7.34"}]}
+{"ID": "rest26_aspect_va_dev_69", "Aspect_VA": [{"Aspect": "food", "VA": "6.07#6.20"}, {"Aspect": "fare", "VA": "7.00#7.08"}]}
+{"ID": "rest26_aspect_va_dev_70", "Aspect_VA": [{"Aspect": "place", "VA": "7.48#7.51"}, {"Aspect": "staff", "VA": "7.36#7.44"}]}
+{"ID": "rest26_aspect_va_dev_71", "Aspect_VA": [{"Aspect": "Service", "VA": "7.48#7.48"}]}
+{"ID": "rest26_aspect_va_dev_72", "Aspect_VA": [{"Aspect": "Service", "VA": "6.63#6.72"}, {"Aspect": "food", "VA": "7.00#7.02"}]}
+{"ID": "rest26_aspect_va_dev_73", "Aspect_VA": [{"Aspect": "Salad portions", "VA": "7.36#7.38"}]}
+{"ID": "rest26_aspect_va_dev_74", "Aspect_VA": [{"Aspect": "seasoning", "VA": "7.16#7.17"}]}
+{"ID": "rest26_aspect_va_dev_75", "Aspect_VA": [{"Aspect": "appetizers", "VA": "6.82#6.89"}, {"Aspect": "beer", "VA": "6.48#6.59"}, {"Aspect": "prices", "VA": "6.29#6.32"}, {"Aspect": "service", "VA": "6.55#6.62"}]}
+{"ID": "rest26_aspect_va_dev_76", "Aspect_VA": [{"Aspect": "pizza", "VA": "7.55#7.54"}]}
+{"ID": "rest26_aspect_va_dev_77", "Aspect_VA": [{"Aspect": "Bar", "VA": "6.56#6.77"}]}
+{"ID": "rest26_aspect_va_dev_78", "Aspect_VA": [{"Aspect": "Friday night staff", "VA": "6.83#7.01"}]}
+{"ID": "rest26_aspect_va_dev_79", "Aspect_VA": [{"Aspect": "banana pancakes", "VA": "7.39#7.37"}]}
+{"ID": "rest26_aspect_va_dev_80", "Aspect_VA": [{"Aspect": "veggie burger", "VA": "7.98#7.99"}, {"Aspect": "selection of local microbrews", "VA": "7.89#7.90"}]}
+{"ID": "rest26_aspect_va_dev_81", "Aspect_VA": [{"Aspect": "Food", "VA": "8.08#8.11"}]}
+{"ID": "rest26_aspect_va_dev_82", "Aspect_VA": [{"Aspect": "restaurant", "VA": "7.90#7.90"}, {"Aspect": "ambience", "VA": "7.71#7.73"}, {"Aspect": "service", "VA": "7.86#7.86"}]}
+{"ID": "rest26_aspect_va_dev_83", "Aspect_VA": [{"Aspect": "curry tofu wrap", "VA": "7.90#7.92"}]}
+{"ID": "rest26_aspect_va_dev_84", "Aspect_VA": [{"Aspect": "lemon grass chicken and rice", "VA": "8.14#8.17"}]}
+{"ID": "rest26_aspect_va_dev_85", "Aspect_VA": [{"Aspect": "fast food burgers", "VA": "7.45#7.46"}]}
+{"ID": "rest26_aspect_va_dev_86", "Aspect_VA": [{"Aspect": "Everyone", "VA": "7.24#7.36"}, {"Aspect": "space", "VA": "7.51#7.60"}]}
+{"ID": "rest26_aspect_va_dev_87", "Aspect_VA": [{"Aspect": "service", "VA": "8.05#8.04"}, {"Aspect": "food", "VA": "7.66#7.63"}]}
+{"ID": "rest26_aspect_va_dev_88", "Aspect_VA": [{"Aspect": "fried pickles", "VA": "7.49#7.46"}, {"Aspect": "drinks", "VA": "3.74#5.56"}]}
+{"ID": "rest26_aspect_va_dev_89", "Aspect_VA": [{"Aspect": "hand-tossed crust", "VA": "6.98#7.04"}, {"Aspect": "texture", "VA": "7.85#7.89"}]}
+{"ID": "rest26_aspect_va_dev_90", "Aspect_VA": [{"Aspect": "location", "VA": "4.43#5.58"}]}
+{"ID": "rest26_aspect_va_dev_91", "Aspect_VA": [{"Aspect": "fish tacos", "VA": "6.60#6.77"}, {"Aspect": "location", "VA": "3.88#5.49"}]}
+{"ID": "rest26_aspect_va_dev_92", "Aspect_VA": [{"Aspect": "restaurant", "VA": "7.26#7.32"}]}
+{"ID": "rest26_aspect_va_dev_93", "Aspect_VA": [{"Aspect": "food", "VA": "4.51#5.57"}]}
+{"ID": "rest26_aspect_va_dev_94", "Aspect_VA": [{"Aspect": "customer service", "VA": "7.97#8.02"}]}
+{"ID": "rest26_aspect_va_dev_95", "Aspect_VA": [{"Aspect": "chicken", "VA": "2.62#6.92"}, {"Aspect": "rice plate", "VA": "2.42#7.09"}]}
+{"ID": "rest26_aspect_va_dev_96", "Aspect_VA": [{"Aspect": "burger", "VA": "7.32#7.39"}]}
+{"ID": "rest26_aspect_va_dev_97", "Aspect_VA": [{"Aspect": "apple fritter", "VA": "7.95#8.00"}]}
+{"ID": "rest26_aspect_va_dev_98", "Aspect_VA": [{"Aspect": "Steak", "VA": "2.98#6.60"}, {"Aspect": "fish", "VA": "3.19#6.47"}, {"Aspect": "salad", "VA": "3.28#5.98"}, {"Aspect": "service", "VA": "2.37#7.31"}]}
+{"ID": "rest26_aspect_va_dev_99", "Aspect_VA": [{"Aspect": "chicken", "VA": "7.95#8.01"}, {"Aspect": "steak", "VA": "7.86#7.92"}, {"Aspect": "rice/beans", "VA": "7.70#7.77"}]}
+{"ID": "rest26_aspect_va_dev_100", "Aspect_VA": [{"Aspect": "Burger", "VA": "6.88#6.98"}]}
+{"ID": "rest26_aspect_va_dev_101", "Aspect_VA": [{"Aspect": "staff", "VA": "7.23#7.31"}]}
+{"ID": "rest26_aspect_va_dev_102", "Aspect_VA": [{"Aspect": "selection of beers", "VA": "6.72#6.84"}]}
+{"ID": "rest26_aspect_va_dev_103", "Aspect_VA": [{"Aspect": "quesadillas", "VA": "7.28#7.29"}, {"Aspect": "wraps", "VA": "7.38#7.38"}]}
+{"ID": "rest26_aspect_va_dev_104", "Aspect_VA": [{"Aspect": "lamb sliders", "VA": "7.96#7.99"}, {"Aspect": "steak", "VA": "8.06#8.09"}, {"Aspect": "cake", "VA": "8.10#8.14"}, {"Aspect": "Everything", "VA": "7.25#7.30"}]}
+{"ID": "rest26_aspect_va_dev_105", "Aspect_VA": [{"Aspect": "food", "VA": "6.84#6.89"}, {"Aspect": "they", "VA": "6.40#6.42"}]}
+{"ID": "rest26_aspect_va_dev_106", "Aspect_VA": [{"Aspect": "Service", "VA": "7.07#7.08"}, {"Aspect": "place", "VA": "3.61#6.09"}]}
+{"ID": "rest26_aspect_va_dev_107", "Aspect_VA": [{"Aspect": "seitan wings", "VA": "6.99#6.93"}, {"Aspect": "seitan nachos", "VA": "7.14#7.15"}]}
+{"ID": "rest26_aspect_va_dev_108", "Aspect_VA": [{"Aspect": "Service", "VA": "7.37#7.35"}, {"Aspect": "prices", "VA": "6.67#6.66"}]}
+{"ID": "rest26_aspect_va_dev_109", "Aspect_VA": [{"Aspect": "griddle home fries", "VA": "7.57#7.51"}, {"Aspect": "service", "VA": "8.08#8.04"}]}
+{"ID": "rest26_aspect_va_dev_110", "Aspect_VA": [{"Aspect": "sandwiches", "VA": "6.89#6.90"}]}
+{"ID": "rest26_aspect_va_dev_111", "Aspect_VA": [{"Aspect": "flavor", "VA": "7.90#7.91"}, {"Aspect": "the bread to cheese ratio", "VA": "4.07#5.33"}]}
+{"ID": "rest26_aspect_va_dev_112", "Aspect_VA": [{"Aspect": "donuts", "VA": "7.71#7.72"}]}
+{"ID": "rest26_aspect_va_dev_113", "Aspect_VA": [{"Aspect": "food", "VA": "7.62#7.61"}, {"Aspect": "service", "VA": "7.94#7.91"}, {"Aspect": "space", "VA": "7.66#7.69"}]}
+{"ID": "rest26_aspect_va_dev_114", "Aspect_VA": [{"Aspect": "prices", "VA": "6.97#6.87"}, {"Aspect": "service", "VA": "6.98#6.87"}, {"Aspect": "food", "VA": "7.35#7.29"}]}
+{"ID": "rest26_aspect_va_dev_115", "Aspect_VA": [{"Aspect": "food", "VA": "7.92#7.93"}]}
+{"ID": "rest26_aspect_va_dev_116", "Aspect_VA": [{"Aspect": "lamb", "VA": "7.43#7.54"}, {"Aspect": "garlic Naan", "VA": "4.41#5.23"}]}
+{"ID": "rest26_aspect_va_dev_117", "Aspect_VA": [{"Aspect": "cook/waiter", "VA": "7.17#7.18"}, {"Aspect": "turkey club sandwiches", "VA": "7.94#7.97"}]}
+{"ID": "rest26_aspect_va_dev_118", "Aspect_VA": [{"Aspect": "price", "VA": "7.42#7.47"}, {"Aspect": "breakfast", "VA": "7.54#7.59"}]}
+{"ID": "rest26_aspect_va_dev_119", "Aspect_VA": [{"Aspect": "service", "VA": "7.94#7.90"}]}
+{"ID": "rest26_aspect_va_dev_120", "Aspect_VA": [{"Aspect": "prices", "VA": "6.70#6.73"}, {"Aspect": "service", "VA": "7.37#7.35"}]}
+{"ID": "rest26_aspect_va_dev_121", "Aspect_VA": [{"Aspect": "staff", "VA": "7.19#7.32"}]}
+{"ID": "rest26_aspect_va_dev_122", "Aspect_VA": [{"Aspect": "service", "VA": "2.55#6.99"}]}
+{"ID": "rest26_aspect_va_dev_123", "Aspect_VA": [{"Aspect": "food", "VA": "7.99#8.07"}]}
+{"ID": "rest26_aspect_va_dev_124", "Aspect_VA": [{"Aspect": "gelato", "VA": "7.61#7.66"}, {"Aspect": "baked goods", "VA": "7.69#7.72"}]}
+{"ID": "rest26_aspect_va_dev_125", "Aspect_VA": [{"Aspect": "sushi", "VA": "2.90#6.54"}]}
+{"ID": "rest26_aspect_va_dev_126", "Aspect_VA": [{"Aspect": "sushi", "VA": "7.54#7.57"}, {"Aspect": "salad", "VA": "3.71#6.01"}, {"Aspect": "crab Rangoon", "VA": "3.19#6.51"}]}
+{"ID": "rest26_aspect_va_dev_127", "Aspect_VA": [{"Aspect": "pizza", "VA": "7.48#7.56"}, {"Aspect": "sauce", "VA": "7.48#7.56"}, {"Aspect": "toppings", "VA": "7.43#7.49"}, {"Aspect": "crust", "VA": "7.49#7.56"}]}
+{"ID": "rest26_aspect_va_dev_128", "Aspect_VA": [{"Aspect": "food", "VA": "3.26#6.23"}, {"Aspect": "service", "VA": "2.83#6.98"}]}
+{"ID": "rest26_aspect_va_dev_129", "Aspect_VA": [{"Aspect": "chicken sandwich", "VA": "7.44#7.49"}]}
+{"ID": "rest26_aspect_va_dev_130", "Aspect_VA": [{"Aspect": "location", "VA": "7.46#7.55"}]}
+{"ID": "rest26_aspect_va_dev_131", "Aspect_VA": [{"Aspect": "garlic bread", "VA": "7.97#8.04"}]}
+{"ID": "rest26_aspect_va_dev_132", "Aspect_VA": [{"Aspect": "service", "VA": "2.46#7.05"}, {"Aspect": "food", "VA": "4.94#5.65"}]}
+{"ID": "rest26_aspect_va_dev_133", "Aspect_VA": [{"Aspect": "vanilla latte", "VA": "7.50#7.57"}]}
+{"ID": "rest26_aspect_va_dev_134", "Aspect_VA": [{"Aspect": "vegan sandwich", "VA": "7.55#7.60"}, {"Aspect": "tofu melt", "VA": "7.50#7.55"}, {"Aspect": "vegan sweets", "VA": "7.51#7.47"}]}
+{"ID": "rest26_aspect_va_dev_135", "Aspect_VA": [{"Aspect": "customer service", "VA": "7.11#7.15"}]}
+{"ID": "rest26_aspect_va_dev_136", "Aspect_VA": [{"Aspect": "food", "VA": "7.81#7.81"}, {"Aspect": "portions", "VA": "7.85#7.85"}]}
+{"ID": "rest26_aspect_va_dev_137", "Aspect_VA": [{"Aspect": "entire staff", "VA": "7.67#7.72"}]}
+{"ID": "rest26_aspect_va_dev_138", "Aspect_VA": [{"Aspect": "food", "VA": "6.93#7.01"}]}
+{"ID": "rest26_aspect_va_dev_139", "Aspect_VA": [{"Aspect": "service", "VA": "7.75#7.71"}, {"Aspect": "value", "VA": "7.55#7.52"}]}
+{"ID": "rest26_aspect_va_dev_140", "Aspect_VA": [{"Aspect": "food", "VA": "5.21#5.49"}]}
+{"ID": "rest26_aspect_va_dev_141", "Aspect_VA": [{"Aspect": "service", "VA": "7.95#7.94"}]}
+{"ID": "rest26_aspect_va_dev_142", "Aspect_VA": [{"Aspect": "ambience", "VA": "7.41#7.43"}, {"Aspect": "service", "VA": "7.31#7.29"}]}
+{"ID": "rest26_aspect_va_dev_143", "Aspect_VA": [{"Aspect": "place", "VA": "7.13#7.09"}]}
+{"ID": "rest26_aspect_va_dev_144", "Aspect_VA": [{"Aspect": "crabmeat omelet", "VA": "7.96#7.97"}, {"Aspect": "home made fries", "VA": "8.16#8.14"}]}
+{"ID": "rest26_aspect_va_dev_145", "Aspect_VA": [{"Aspect": "Food", "VA": "7.92#7.89"}]}
+{"ID": "rest26_aspect_va_dev_146", "Aspect_VA": [{"Aspect": "salad", "VA": "6.31#6.46"}, {"Aspect": "bread", "VA": "4.11#5.40"}]}
+{"ID": "rest26_aspect_va_dev_147", "Aspect_VA": [{"Aspect": "food", "VA": "7.00#7.01"}, {"Aspect": "service", "VA": "7.68#7.66"}, {"Aspect": "everything", "VA": "7.79#7.83"}]}
+{"ID": "rest26_aspect_va_dev_148", "Aspect_VA": [{"Aspect": "cannoli", "VA": "7.79#7.83"}]}
+{"ID": "rest26_aspect_va_dev_149", "Aspect_VA": [{"Aspect": "pa nang chicken", "VA": "7.96#8.03"}]}
+{"ID": "rest26_aspect_va_dev_150", "Aspect_VA": [{"Aspect": "service", "VA": "3.56#5.84"}, {"Aspect": "everything", "VA": "2.96#6.31"}]}
+{"ID": "rest26_aspect_va_dev_151", "Aspect_VA": [{"Aspect": "service", "VA": "2.63#6.88"}]}
+{"ID": "rest26_aspect_va_dev_152", "Aspect_VA": [{"Aspect": "It", "VA": "7.97#7.98"}, {"Aspect": "service", "VA": "8.04#8.07"}]}
+{"ID": "rest26_aspect_va_dev_153", "Aspect_VA": [{"Aspect": "price", "VA": "7.05#7.02"}, {"Aspect": "food", "VA": "7.49#7.49"}, {"Aspect": "service", "VA": "7.50#7.48"}]}
+{"ID": "rest26_aspect_va_dev_154", "Aspect_VA": [{"Aspect": "Food", "VA": "7.70#7.71"}, {"Aspect": "drinks", "VA": "7.19#7.20"}, {"Aspect": "crowd", "VA": "6.79#6.88"}]}
+{"ID": "rest26_aspect_va_dev_155", "Aspect_VA": [{"Aspect": "customer service", "VA": "2.64#6.88"}]}
+{"ID": "rest26_aspect_va_dev_156", "Aspect_VA": [{"Aspect": "Dinner", "VA": "2.70#7.22"}]}
+{"ID": "rest26_aspect_va_dev_157", "Aspect_VA": [{"Aspect": "service", "VA": "8.00#7.99"}, {"Aspect": "facilities", "VA": "7.41#7.45"}, {"Aspect": "catering", "VA": "7.39#7.49"}]}
+{"ID": "rest26_aspect_va_dev_158", "Aspect_VA": [{"Aspect": "staff", "VA": "8.06#8.13"}]}
+{"ID": "rest26_aspect_va_dev_159", "Aspect_VA": [{"Aspect": "food", "VA": "7.94#7.94"}]}
+{"ID": "rest26_aspect_va_dev_160", "Aspect_VA": [{"Aspect": "bread", "VA": "7.74#7.70"}, {"Aspect": "chocolate croissant", "VA": "6.79#6.84"}]}
+{"ID": "rest26_aspect_va_dev_161", "Aspect_VA": [{"Aspect": "place", "VA": "6.73#6.82"}, {"Aspect": "servers", "VA": "6.84#6.91"}, {"Aspect": "food", "VA": "6.87#6.92"}, {"Aspect": "dish sizes", "VA": "4.56#5.74"}]}
+{"ID": "rest26_aspect_va_dev_162", "Aspect_VA": [{"Aspect": "service", "VA": "7.98#8.02"}]}
+{"ID": "rest26_aspect_va_dev_163", "Aspect_VA": [{"Aspect": "customer service", "VA": "7.48#7.51"}]}
+{"ID": "rest26_aspect_va_dev_164", "Aspect_VA": [{"Aspect": "cannolis", "VA": "7.88#7.90"}]}
+{"ID": "rest26_aspect_va_dev_165", "Aspect_VA": [{"Aspect": "3 meat hash", "VA": "8.19#8.24"}, {"Aspect": "turkey sandwich", "VA": "7.86#7.85"}, {"Aspect": "bagel/salmon", "VA": "7.47#7.45"}]}
+{"ID": "rest26_aspect_va_dev_166", "Aspect_VA": [{"Aspect": "location", "VA": "7.08#7.14"}, {"Aspect": "device", "VA": "7.13#7.21"}]}
+{"ID": "rest26_aspect_va_dev_167", "Aspect_VA": [{"Aspect": "place", "VA": "7.05#7.05"}, {"Aspect": "location", "VA": "7.26#7.28"}]}
+{"ID": "rest26_aspect_va_dev_168", "Aspect_VA": [{"Aspect": "food", "VA": "7.33#7.38"}, {"Aspect": "service", "VA": "4.19#5.96"}]}
+{"ID": "rest26_aspect_va_dev_169", "Aspect_VA": [{"Aspect": "service", "VA": "7.85#7.84"}, {"Aspect": "food", "VA": "7.81#7.83"}]}
+{"ID": "rest26_aspect_va_dev_170", "Aspect_VA": [{"Aspect": "barbecue", "VA": "7.27#7.27"}, {"Aspect": "affordable", "VA": "6.81#6.79"}]}
+{"ID": "rest26_aspect_va_dev_171", "Aspect_VA": [{"Aspect": "breakfast burritos", "VA": "7.36#7.37"}]}
+{"ID": "rest26_aspect_va_dev_172", "Aspect_VA": [{"Aspect": "wines", "VA": "7.55#7.56"}, {"Aspect": "prices", "VA": "7.51#7.52"}, {"Aspect": "service", "VA": "7.41#7.39"}]}
+{"ID": "rest26_aspect_va_dev_173", "Aspect_VA": [{"Aspect": "food", "VA": "8.13#8.18"}, {"Aspect": "service", "VA": "7.48#7.53"}]}
+{"ID": "rest26_aspect_va_dev_174", "Aspect_VA": [{"Aspect": "food", "VA": "7.86#7.90"}, {"Aspect": "service", "VA": "7.89#7.90"}]}
+{"ID": "rest26_aspect_va_dev_175", "Aspect_VA": [{"Aspect": "server", "VA": "7.64#7.62"}]}
+{"ID": "rest26_aspect_va_dev_176", "Aspect_VA": [{"Aspect": "pizza", "VA": "3.50#6.00"}]}
+{"ID": "rest26_aspect_va_dev_177", "Aspect_VA": [{"Aspect": "atmosphere", "VA": "7.44#7.41"}, {"Aspect": "service", "VA": "7.44#7.41"}]}
+{"ID": "rest26_aspect_va_dev_178", "Aspect_VA": [{"Aspect": "bbq chicken pizza", "VA": "7.30#7.36"}]}
+{"ID": "rest26_aspect_va_dev_179", "Aspect_VA": [{"Aspect": "service", "VA": "7.42#7.40"}, {"Aspect": "food", "VA": "7.72#7.72"}]}
+{"ID": "rest26_aspect_va_dev_180", "Aspect_VA": [{"Aspect": "price", "VA": "7.75#7.77"}, {"Aspect": "specialties sushi menu", "VA": "7.61#7.67"}]}
+{"ID": "rest26_aspect_va_dev_181", "Aspect_VA": [{"Aspect": "Portions", "VA": "7.36#7.41"}, {"Aspect": "food", "VA": "6.67#6.79"}]}
+{"ID": "rest26_aspect_va_dev_182", "Aspect_VA": [{"Aspect": "coffee", "VA": "7.64#7.64"}, {"Aspect": "staff", "VA": "7.76#7.79"}]}
+{"ID": "rest26_aspect_va_dev_183", "Aspect_VA": [{"Aspect": "bacon garlic oysters", "VA": "5.00#5.36"}]}
+{"ID": "rest26_aspect_va_dev_184", "Aspect_VA": [{"Aspect": "food", "VA": "5.59#5.71"}]}
+{"ID": "rest26_aspect_va_dev_185", "Aspect_VA": [{"Aspect": "service", "VA": "7.45#7.44"}]}
+{"ID": "rest26_aspect_va_dev_186", "Aspect_VA": [{"Aspect": "staff", "VA": "7.15#7.27"}, {"Aspect": "portions", "VA": "6.51#6.56"}]}
+{"ID": "rest26_aspect_va_dev_187", "Aspect_VA": [{"Aspect": "prices", "VA": "5.30#5.73"}, {"Aspect": "store", "VA": "6.80#6.79"}]}
+{"ID": "rest26_aspect_va_dev_188", "Aspect_VA": [{"Aspect": "food", "VA": "7.76#7.77"}]}
+{"ID": "rest26_aspect_va_dev_189", "Aspect_VA": [{"Aspect": "location", "VA": "7.53#7.58"}, {"Aspect": "food", "VA": "7.46#7.48"}, {"Aspect": "vegan options", "VA": "7.27#7.32"}]}
+{"ID": "rest26_aspect_va_dev_190", "Aspect_VA": [{"Aspect": "gumbo", "VA": "7.95#8.00"}, {"Aspect": "chicken & waffles", "VA": "7.52#7.48"}]}
+{"ID": "rest26_aspect_va_dev_191", "Aspect_VA": [{"Aspect": "location", "VA": "6.97#7.02"}]}
+{"ID": "rest26_aspect_va_dev_192", "Aspect_VA": [{"Aspect": "dining experiences", "VA": "7.61#7.73"}]}
+{"ID": "rest26_aspect_va_dev_193", "Aspect_VA": [{"Aspect": "service", "VA": "6.92#6.98"}, {"Aspect": "staff", "VA": "7.00#7.10"}]}
+{"ID": "rest26_aspect_va_dev_194", "Aspect_VA": [{"Aspect": "waiter", "VA": "5.93#6.00"}]}
+{"ID": "rest26_aspect_va_dev_195", "Aspect_VA": [{"Aspect": "bartender", "VA": "7.78#7.78"}, {"Aspect": "service", "VA": "7.14#7.22"}]}
+{"ID": "rest26_aspect_va_dev_196", "Aspect_VA": [{"Aspect": "portion", "VA": "6.55#6.63"}, {"Aspect": "sliced beef", "VA": "6.48#6.51"}, {"Aspect": "horseradish sauce", "VA": "7.47#7.55"}]}
+{"ID": "rest26_aspect_va_dev_197", "Aspect_VA": [{"Aspect": "fast food", "VA": "6.91#6.92"}]}
+{"ID": "rest26_aspect_va_dev_198", "Aspect_VA": [{"Aspect": "atmosphere", "VA": "7.80#7.83"}, {"Aspect": "service", "VA": "7.87#7.91"}, {"Aspect": "dinner meal", "VA": "7.81#7.85"}]}
+{"ID": "rest26_aspect_va_dev_199", "Aspect_VA": [{"Aspect": "customer service", "VA": "2.93#6.45"}]}
+{"ID": "rest26_aspect_va_dev_200", "Aspect_VA": [{"Aspect": "atmosphere", "VA": "7.51#7.52"}, {"Aspect": "service", "VA": "7.59#7.59"}, {"Aspect": "food", "VA": "7.66#7.68"}]}

@@ -9,7 +9,7 @@ DimABSA Subtask1 数据转换与存储（使用 data_path + pd.read_json(lines=T
 
 from __future__ import annotations
 from pathlib import Path
-import math
+import math, re, unicodedata
 from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
@@ -33,6 +33,44 @@ restaurant_train= pd.read_json(rs_train, lines=True)
 
 
 # ========= 工具 =========
+# === 去掉强调符号，但保留词面（大小写不变） ===
+_EM_DLM = re.compile(r"`+([^`]+?)`+")            # `like this`
+_AST_EM = re.compile(r"\*(\S(?:.*?\S)?)\*")      # *italic*
+_UND_EM = re.compile(r"_(\S(?:.*?\S)?)_")        # _italic_
+MULTI_SPACE = re.compile(r"\s+")
+ELLIPSIS = re.compile(r"\.{3,}")
+MULTI_PUNC = re.compile(r"([!?])[!?]{1,}")       # !!!?? → ! / ?
+SMART_QUOTES = {                                 # 智能引号归一
+    "\u2018": "'", "\u2019": "'",
+    "\u201c": '"', "\u201d": '"',
+    "\u00b4": "'", "\u2032": "'",
+}
+
+def _unify_unicode(s: str) -> str:
+    s = unicodedata.normalize("NFKC", s)
+    for k, v in SMART_QUOTES.items():
+        s = s.replace(k, v)
+    return s
+
+def _strip_markdown_like(text: str) -> str:
+    # 去掉强调外壳：`...` / *...* / _..._
+    text = _EM_DLM.sub(lambda m: m.group(1), text)
+    text = _AST_EM.sub(lambda m: m.group(1), text)
+    text = _UND_EM.sub(lambda m: m.group(1), text)
+    return text
+
+def normalize_keep_emphasis(text: Any) -> str:
+    """删除强调标记（`,*,_），保留内部词面；统一引号/省略号/连写标点与多空格。"""
+    if not isinstance(text, str):
+        text = "" if text is None else str(text)
+    s = _unify_unicode(text)
+    s = _strip_markdown_like(s)
+    s = ELLIPSIS.sub("...", s)
+    s = MULTI_PUNC.sub(lambda m: m.group(1), s)
+    s = MULTI_SPACE.sub(" ", s)
+    return s.strip()
+
+
 
 def _first_scalar(x):
     """
@@ -81,11 +119,11 @@ def build_train_table(dfs: List[pd.DataFrame], source_names: List[str]) -> pd.Da
         # 用 zip 把两个列表一一配对，每次循环同时拿到一个 DataFrame（df）和它的来源名（src）。
         # 关键点：zip 会以最短的列表为准截断。如果 dfs 和 source_names 长度不一样，超出的那部分会被静默丢掉
         for _, r in df.iterrows():
-            text = r.get("Text", "")
+            text = normalize_keep_emphasis(r.get("Text", ""))
             rid = r.get("ID", None)
             quads = r.get("Quadruplet", []) or []
             for q in quads:
-                aspect = (q.get("Aspect", "NULL") or "NULL")
+                aspect = normalize_keep_emphasis(q.get("Aspect", "NULL") or "NULL")
                 parsed = parse_va(q.get("VA", None))
                 if parsed is None:
                     continue
@@ -96,8 +134,8 @@ def build_train_table(dfs: List[pd.DataFrame], source_names: List[str]) -> pd.Da
                     "v": float(v),
                     "a": float(a),
                     "id": rid,
-                    "category": q.get("Category", None),
-                    "opinion": q.get("Opinion", None),
+                    "category": normalize_keep_emphasis(q.get("Category", None)) if q.get("Category", None) is not None else None,
+                    "opinion": normalize_keep_emphasis(q.get("Opinion", None)) if q.get("Opinion", None) is not None else None,
                     "source": src,
                 })
     df_out = pd.DataFrame(rows)
@@ -110,37 +148,42 @@ def build_dev_table(dfs: List[pd.DataFrame], source_names: List[str]) -> pd.Data
     rows: List[Dict[str, Any]] = []
     for df, src in zip(dfs, source_names):
         for _, r in df.iterrows():
-            # iterrows() 是 Pandas 里逐行遍历 DataFrame的办法之一。它把每一行当作 pd.Series 返回，并给你该行的索引。
-            rid = r.get("ID", None)
-            text = r.get("Text", "")
+            rid  = r.get("ID", None)
+            text = normalize_keep_emphasis(r.get("Text", ""))  # 去掉强调符号、统一空白/引号等
             emitted = False
 
+            # 1) 若有显式的 Aspect 字段（可能是 str 或 list），逐个输出
             val = r["Aspect"] if ("Aspect" in r) else None
             val = _first_scalar(val)
             if isinstance(val, str) and val not in ("", "NULL"):
                 aspects = r["Aspect"]
                 if isinstance(aspects, str):
-                    # 如果 Aspect 是字符串，就先包成单元素列表，然后进入下个if 当作列表遍历一次；
                     aspects = [aspects]
                 if isinstance(aspects, list):
                     for asp in aspects:
+                        asp = normalize_keep_emphasis(asp)  # 去掉强调符号，但不改大小写/词形
                         rows.append({"id": rid, "text": text, "aspect": asp, "source": src})
                     emitted = True
 
+            # 2) 否则尝试从 Quadruplet 推断（兼容 dict/list）
             if not emitted:
                 quads = r.get("Quadruplet", []) or []
+                if isinstance(quads, dict):
+                    quads = [quads]
                 if quads:
                     for q in quads:
-                        asp = (q.get("Aspect", "NULL") or "NULL")
+                        asp = normalize_keep_emphasis(q.get("Aspect", "NULL") or "NULL")
                         rows.append({"id": rid, "text": text, "aspect": asp, "source": src})
                     emitted = True
 
+            # 3) 仍无可用 Aspect，则填充占位
             if not emitted:
                 rows.append({"id": rid, "text": text, "aspect": "NULL", "source": src})
 
     df_out = pd.DataFrame(rows)
     cols = ["id", "text", "aspect", "source"]
     return df_out[cols].reset_index(drop=True)
+
 
 
 # ========= 主流程 =========
