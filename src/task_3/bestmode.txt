@@ -1,0 +1,152 @@
+class Config:
+    # —— 模型与 LoRA ——
+    base_model: str = "/home/cuizhibin/projects/Models/Qwen3-1.7B"
+    max_seq_len: int = 512                # 指令 + 文本 + 标签 的最大长度
+
+    # 如果你想先用 FP16/BF16 全精度，不想折腾 4bit，设为 False 即可
+    use_4bit: bool = False                 # True = QLoRA (bitsandbytes), False = 常规 LoRA
+
+    lora_r: int = 16                       # LoRA rank（低秩分解维度）
+    lora_alpha: int = 32                   # LoRA 缩放系数
+    lora_dropout: float = 0.05             # LoRA dropout
+
+    # —— 训练超参 ——
+    epochs: int = 4
+    train_batch_size: int = 8              # per-device batch size
+    eval_batch_size: int = 4
+    grad_accum_steps: int = 4              # 梯度累积步数
+    learning_rate: float = 1e-4
+    warmup_ratio: float = 0.03
+    weight_decay: float = 0.01
+    max_grad_norm: float = 1.0
+
+    logging_steps: int = 50
+
+    # —— 解码 ——（预测 dev_task2 用）
+    gen_max_new_tokens: int = 128
+    temperature: float = 0.0
+    top_p: float = 0.9
+    top_k: int = 50
+
+    # —— 数据 ——
+    dev_ratio: float = 0.1
+    seed: int = 42
+
+    # —— 输出目录 ——
+    output_dir: str = "output/qwen3_task2"
+
+
+0.4826
+class Config:
+    # —— 模型与 LoRA ——
+    base_model: str = "/home/cuizhibin/projects/Models/Qwen3-4B-Instruct-2507-bnb-4bit"
+    max_seq_len: int = 512                # 指令 + 文本 + 标签 的最大长度
+
+    # 如果你想先用 FP16/BF16 全精度，不想折腾 4bit，设为 False 即可
+    use_4bit: bool = True                # True = QLoRA (bitsandbytes), False = 常规 LoRA
+
+    lora_r: int = 16                      # LoRA rank（低秩分解维度）
+    lora_alpha: int = 32                  # LoRA 缩放系数
+    lora_dropout: float = 0.05            # LoRA dropout
+
+    # —— 训练超参 ——
+    epochs: int = 3
+    train_batch_size: int = 8             # per-device batch size
+    eval_batch_size: int = 8
+    grad_accum_steps: int = 1             # 梯度累积步数
+    learning_rate: float = 6e-5
+    warmup_ratio: float = 0.06
+    weight_decay: float = 0.01
+    max_grad_norm: float = 1.0
+    num_workers: int = 8
+    logging_steps: int = 50
+
+    # —— 解码 ——（预测 dev_task3 用）
+    gen_max_new_tokens: int = 512          # Quad 输出不长，没必要 256
+    temperature: float = 0.0
+    top_p: float = 0.9
+    top_k: int = 50
+
+    # —— 数据 ——
+    dev_ratio: float = 0.1
+    seed: int = 42
+
+    # —— 输出目录 ——
+    output_dir: str = "output/qwen3_task3"
+
+
+0.4713
+class Config:
+    # —— 模型与 LoRA ——
+    base_model: str = "/home/cuizhibin/projects/Models/Qwen3-4B-Instruct-2507-bnb-4bit"
+    max_seq_len: int = 512                # 指令 + 文本 + 标签 的最大长度
+
+    # 如果你想先用 FP16/BF16 全精度，不想折腾 4bit，设为 False 即可
+    use_4bit: bool = True                # True = QLoRA (bitsandbytes), False = 常规 LoRA
+
+    lora_r: int = 16                      # LoRA rank（低秩分解维度）
+    lora_alpha: int = 32                  # LoRA 缩放系数
+    lora_dropout: float = 0.05            # LoRA dropout
+
+    # —— 训练超参 ——
+    epochs: int = 3
+    train_batch_size: int = 32             # per-device batch size
+    eval_batch_size: int = 32
+    grad_accum_steps: int = 1             # 梯度累积步数
+    learning_rate: float = 8e-5
+    warmup_ratio: float = 0.02
+    weight_decay: float = 0.01
+    max_grad_norm: float = 1.0
+    num_workers: int = 8
+    logging_steps: int = 50
+
+    # —— 解码 ——（预测 dev_task3 用）
+    gen_max_new_tokens: int = 256          # Quad 输出不长，没必要 256
+    temperature: float = 0.0
+    top_p: float = 0.9
+    top_k: int = 50
+
+    # —— 数据 ——
+    dev_ratio: float = 0.1
+    seed: int = 42
+
+    # —— 输出目录 ——
+    output_dir: str = "output/qwen3_task3"
+
+0.4796
+class Config:
+    # —— 模型与 LoRA ——
+    base_model: str = "/home/cuizhibin/projects/Models/Qwen3-4B-Instruct-2507-bnb-4bit"
+    max_seq_len: int = 512                # 指令 + 文本 + 标签 的最大长度
+
+    # 如果你想先用 FP16/BF16 全精度，不想折腾 4bit，设为 False 即可
+    use_4bit: bool = True                # True = QLoRA (bitsandbytes), False = 常规 LoRA
+
+    lora_r: int = 16                      # LoRA rank（低秩分解维度）
+    lora_alpha: int = 32                  # LoRA 缩放系数
+    lora_dropout: float = 0.05            # LoRA dropout
+
+    # —— 训练超参 ——
+    epochs: int = 3
+    train_batch_size: int = 16             # per-device batch size
+    eval_batch_size: int = 16
+    grad_accum_steps: int = 1             # 梯度累积步数
+    learning_rate: float = 8e-5
+    warmup_ratio: float = 0.02
+    weight_decay: float = 0.01
+    max_grad_norm: float = 1.0
+    num_workers: int = 8
+    logging_steps: int = 50
+
+    # —— 解码 ——（预测 dev_task3 用）
+    gen_max_new_tokens: int = 512          # Quad 输出不长，没必要 256
+    temperature: float = 0.0
+    top_p: float = 0.9
+    top_k: int = 50
+
+    # —— 数据 ——
+    dev_ratio: float = 0.1
+    seed: int = 42
+
+    # —— 输出目录 ——
+    output_dir: str = "output/qwen3_task3"

@@ -1,9 +1,46 @@
-1.3181
+Epoch 09 | train=0.7423 (a:0.238 o:0.236 p:0.147 va:0.390) || val=1.1894 (a:0.264 o:0.264 p:0.853 va:0.470)
 class Config:
     # —— 模型/数据基础 ——
     local_model_dir: str = "models/roberta-base"  # 本地权重路径（离线加载）；换模型时指到对应目录
     max_len: int = 224                            # tokenizer 截断长度；长句可提到 256/320，显存↑ 训练慢
-    batch_size: int = 12                          # 训练批大小；显存不够可减小并配合梯度累积
+    batch_size: int = 16                          # 训练批大小；显存不够可减小并配合梯度累积
+    epochs: int = 30                              # 训练轮数；配合 early stop，一般 10–20 足够
+    seed: int = 42                                # 随机种子；复现用
+
+    # —— 学习率与优化 ——
+    lr_encoder: float = 1e-5                      # 编码器（RoBERTa/BERT）学习率；解冻后也会用到
+    lr_heads: float   = 8e-5                      # 任务头（BIO/配对/VA）的学习率；过大易抖动、过小收敛慢
+    weight_decay: float = 0.02                    # L2 权重衰减（正则）；0.01–0.05 常用，过大欠拟合
+    warmup_ratio: float = 0.12                    # 线性 warmup 比例；小数据/大 LR 建议 0.06–0.1
+    warmup_min_steps: int = 100                   # warmup 的最小步数下限；总步数太少时的兜底
+    freeze_epochs: int = 4                        # 前几轮只训头部（冻结 encoder）；可提升早期稳定与召回
+    enc_lr_after_unfreeze: float = 5e-6           # 解冻后 encoder 的 LR；越小越把学习量留给任务头
+    patience: int = 4                             # 验证无提升的容忍轮数（早停）；曲线抖动大可增至 8–10
+
+    # —— 解码/候选（控制召回与误报） ——
+    pair_window: int = 160                        # A/O 起点最大距离（token）；增大→召回↑但误配风险↑
+    topk_pairs: int  = 16                         # 每句最多输出配对候选；过大可能引入重复/噪声
+    pair_thresh: float = 0.25                     # 非 None 类的最小概率阈；降→召回↑ 精度↓，建议 0.22–0.40
+    max_decode_len: int = 256                     # 推理阶段对极长句的保护性上限；避免极端长文本拖慢
+    use_amp: bool = True                          # 混合精度（AMP）；显存省、速度快，数值不稳时可关
+
+    # —— VA 回归（情感强度/唤醒度） ——
+    va_head_dim: int = 64                         # VA 头的隐藏维度；32/64/128 常用，过大易过拟合
+    lambda_pair: float = 0.5                     # 总损失中“配对分类”权重；↑能抑制判 None 倾向，但太大压 BIO/VA
+    gamma_focal: float = 2.0                      # focal loss 的聚焦参数；2.0 常用，↑更关注难样本
+    lambda_va: float = 0.5                        # VA 回归损失权重；调平分类与回归的相对重要性
+
+    # —— 类不平衡校正（配对分类的 focal α 系数） ——
+    alpha_none: float = 0.3                      # None 类的权重（越小→越不偏向判 None，召回↑）
+    alpha_pos:  float = 0.7                          # 非 None 类权重（与上相对）；两者一般和≈1.0
+
+
+val=1.2863 (a:0.264 o:0.265 p:1.039 va:0.475)
+class Config:
+    # —— 模型/数据基础 ——
+    local_model_dir: str = "models/roberta-base"  # 本地权重路径（离线加载）；换模型时指到对应目录
+    max_len: int = 224                            # tokenizer 截断长度；长句可提到 256/320，显存↑ 训练慢
+    batch_size: int = 16                          # 训练批大小；显存不够可减小并配合梯度累积
     epochs: int = 16                              # 训练轮数；配合 early stop，一般 10–20 足够
     seed: int = 42                                # 随机种子；复现用
 
@@ -11,7 +48,44 @@ class Config:
     lr_encoder: float = 1e-5                      # 编码器（RoBERTa/BERT）学习率；解冻后也会用到
     lr_heads: float   = 8e-5                      # 任务头（BIO/配对/VA）的学习率；过大易抖动、过小收敛慢
     weight_decay: float = 0.02                    # L2 权重衰减（正则）；0.01–0.05 常用，过大欠拟合
-    warmup_ratio: float = 0.10                    # 线性 warmup 比例；小数据/大 LR 建议 0.06–0.1
+    warmup_ratio: float = 0.12                    # 线性 warmup 比例；小数据/大 LR 建议 0.06–0.1
+    warmup_min_steps: int = 100                   # warmup 的最小步数下限；总步数太少时的兜底
+    freeze_epochs: int = 4                        # 前几轮只训头部（冻结 encoder）；可提升早期稳定与召回
+    enc_lr_after_unfreeze: float = 5e-6           # 解冻后 encoder 的 LR；越小越把学习量留给任务头
+    patience: int = 4                             # 验证无提升的容忍轮数（早停）；曲线抖动大可增至 8–10
+
+    # —— 解码/候选（控制召回与误报） ——
+    pair_window: int = 160                        # A/O 起点最大距离（token）；增大→召回↑但误配风险↑
+    topk_pairs: int  = 16                         # 每句最多输出配对候选；过大可能引入重复/噪声
+    pair_thresh: float = 0.25                     # 非 None 类的最小概率阈；降→召回↑ 精度↓，建议 0.22–0.40
+    max_decode_len: int = 256                     # 推理阶段对极长句的保护性上限；避免极端长文本拖慢
+    use_amp: bool = True                          # 混合精度（AMP）；显存省、速度快，数值不稳时可关
+
+    # —— VA 回归（情感强度/唤醒度） ——
+    va_head_dim: int = 64                         # VA 头的隐藏维度；32/64/128 常用，过大易过拟合
+    lambda_pair: float = 0.5                     # 总损失中“配对分类”权重；↑能抑制判 None 倾向，但太大压 BIO/VA
+    gamma_focal: float = 2.0                      # focal loss 的聚焦参数；2.0 常用，↑更关注难样本
+    lambda_va: float = 0.5                        # VA 回归损失权重；调平分类与回归的相对重要性
+
+    # —— 类不平衡校正（配对分类的 focal α 系数） ——
+    alpha_none: float = 0.15                      # None 类的权重（越小→越不偏向判 None，召回↑）
+    alpha_pos:  float = 0.85                      # 非 None 类权重（与上相对）；两者一般和≈1.0
+
+
+更优 val=1.2906 (a:0.270 o:0.271 p:1.004 va:0.495)   epoch 09
+class Config:
+    # —— 模型/数据基础 ——
+    local_model_dir: str = "models/roberta-base"  # 本地权重路径（离线加载）；换模型时指到对应目录
+    max_len: int = 224                            # tokenizer 截断长度；长句可提到 256/320，显存↑ 训练慢
+    batch_size: int = 16                          # 训练批大小；显存不够可减小并配合梯度累积
+    epochs: int = 16                              # 训练轮数；配合 early stop，一般 10–20 足够
+    seed: int = 42                                # 随机种子；复现用
+
+    # —— 学习率与优化 ——
+    lr_encoder: float = 1e-5                      # 编码器（RoBERTa/BERT）学习率；解冻后也会用到
+    lr_heads: float   = 8e-5                      # 任务头（BIO/配对/VA）的学习率；过大易抖动、过小收敛慢
+    weight_decay: float = 0.02                    # L2 权重衰减（正则）；0.01–0.05 常用，过大欠拟合
+    warmup_ratio: float = 0.12                    # 线性 warmup 比例；小数据/大 LR 建议 0.06–0.1
     warmup_min_steps: int = 100                   # warmup 的最小步数下限；总步数太少时的兜底
     freeze_epochs: int = 4                        # 前几轮只训头部（冻结 encoder）；可提升早期稳定与召回
     enc_lr_after_unfreeze: float = 5e-6           # 解冻后 encoder 的 LR；越小越把学习量留给任务头

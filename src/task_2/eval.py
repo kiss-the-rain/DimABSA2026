@@ -166,9 +166,11 @@ def per_id_confusion(pred: Dict[str, List[Tuple[str,str,str]]],
     return rows
 
 def main():
+    DEFAULT_GOLD = ROOT / "data/track_a/subtask_2/eng/eng_laptop_dev_task2.jsonl"
+    DEFAULT_PRED = ROOT / "data/submit/task2/pred_dev.jsonl"
     ap = argparse.ArgumentParser()
-    ap.add_argument("--gold", required=True, help="gold jsonl 路径（dev_task2.jsonl）")
-    ap.add_argument("--pred", required=True, help="你的提交文件 jsonl 路径")
+    ap.add_argument("--gold", default=DEFAULT_GOLD, help="gold jsonl 路径（dev_task2.jsonl）")
+    ap.add_argument("--pred", default=DEFAULT_PRED, help="你的提交文件 jsonl 路径")
     ap.add_argument("--lower", action="store_true", help="统一转小写后匹配")
     ap.add_argument("--strip-punct", action="store_true", help="去除标点后匹配")
     ap.add_argument("--topk", type=int, default=15, help="诊断中最多显示多少条样本")

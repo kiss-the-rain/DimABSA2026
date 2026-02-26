@@ -1,0 +1,156 @@
+best
+class Config:
+    local_model_dir: str = "/home/cuizhibin/projects/Models/deberta-v3-large/snapshots/64a8c8eab3e352a784c658aef62be1662607476f"
+    max_len: int = 512
+    # 优化与正则
+    lr_encoder: float = 1e-5
+    lr_head: float = 1e-4
+    weight_decay: float = 0.5
+    warmup_ratio: float = 0.06
+    warmup_min_steps: int = 500  # warmup 下限
+
+    # 训练策略
+    epochs: int = 20
+    batch_size: int = 16
+    freeze_epochs: int = 1
+    enc_lr_after_unfreeze: float = 4.5e-6  # 解冻后 encoder 更小 LR
+    patience: int = 3
+    use_huber: bool = True
+
+    seed: int = 42
+
+class Config:
+    local_model_dir: str = "models/roberta-base"
+    max_len: int = 192
+    # 优化与正则
+    lr_encoder: float = 1e-5
+    lr_head: float    = 1.7e-4
+    weight_decay: float = 0.02
+    warmup_ratio: float = 0.06
+    warmup_min_steps: int = 500          # warmup 下限
+
+    # 训练策略
+    epochs: int = 20
+    batch_size: int = 16
+    freeze_epochs: int = 1
+    enc_lr_after_unfreeze: float = 7e-6  # 解冻后 encoder 更小 LR
+    patience: int = 3
+    use_huber: bool = True
+
+    seed: int = 42
+
+
+
+0.9456
+class Config:
+    local_model_dir: str = "/home/cuizhibin/projects/Models/deberta-v3-large/snapshots/64a8c8eab3e352a784c658aef62be1662607476f"
+    max_len: int = 512
+    # 优化与正则
+    lr_encoder: float = 1e-5
+    lr_head: float = 1e-4
+    weight_decay: float = 0.5
+    warmup_ratio: float = 0.06
+    warmup_min_steps: int = 400  # warmup 下限
+
+    # 训练策略
+    epochs: int = 20
+    batch_size: int = 32
+    freeze_epochs: int = 1
+    enc_lr_after_unfreeze: float = 5e-6  # 解冻后 encoder 更小 LR
+    patience: int = 3
+    use_huber: bool = True
+
+    seed: int = 42
+
+
+1.0
+class Config:
+    local_model_dir: str = "models/roberta-large"
+    max_len: int = 512
+    # 优化与正则
+    lr_encoder: float = 9e-6
+    lr_head: float = 2.8e-4
+    weight_decay: float = 0.05
+    warmup_ratio: float = 0.06
+    warmup_min_steps: int = 500  # warmup 下限
+
+    # 训练策略
+    epochs: int = 20
+    batch_size: int = 2
+    freeze_epochs: int = 1
+    enc_lr_after_unfreeze: float = 5e-6  # 解冻后 encoder 更小 LR
+    patience: int = 4
+    use_huber: bool = True
+
+    seed: int = 42
+
+
+
+
+
+
+0.9408
+class Config:
+    local_model_dir: str = "/home/cuizhibin/projects/Models/deberta-v3-large/snapshots/64a8c8eab3e352a784c658aef62be1662607476f"
+    max_len: int = 512
+    # 优化与正则
+    lr_encoder: float = 1e-5
+    lr_head: float = 1e-4
+    weight_decay: float = 0.5
+    warmup_ratio: float = 0.06
+    warmup_min_steps: int = 500  # warmup 下限
+
+    # 训练策略
+    epochs: int = 20
+    batch_size: int = 32
+    freeze_epochs: int = 1
+    enc_lr_after_unfreeze: float = 4.5e-6  # 解冻后 encoder 更小 LR
+    patience: int = 3
+    use_huber: bool = True
+
+    seed: int = 42
+
+
+
+
+
+服务器上RMSE更低
+class Config:
+    local_model_dir: str = "models/roberta-base"
+    max_len: int = 512
+    # 优化与正则
+    lr_encoder: float = 1e-5
+    lr_head: float = 1.7e-4
+    weight_decay: float = 0.03
+    warmup_ratio: float = 0.06
+    warmup_min_steps: int = 400  # warmup 下限
+
+    # 训练策略
+    epochs: int = 20
+    batch_size: int = 4
+    freeze_epochs: int = 1
+    enc_lr_after_unfreeze: float = 4.5e-6  # 解冻后 encoder 更小 LR
+    patience: int = 5
+    use_huber: bool = True
+
+    seed: int = 42
+
+class Config:
+    local_model_dir: str = "models/roberta-base"
+    max_len: int = 512
+    # 优化与正则
+    lr_encoder: float = 1e-5
+    lr_head: float = 1.7e-4
+    weight_decay: float = 0.03
+    warmup_ratio: float = 0.06
+    warmup_min_steps: int = 400  # warmup 下限
+
+    # 训练策略
+    epochs: int = 20
+    batch_size: int = 2
+    freeze_epochs: int = 1
+    enc_lr_after_unfreeze: float = 4e-6  # 解冻后 encoder 更小 LR
+    patience: int = 5
+    use_huber: bool = True
+
+    seed: int = 42

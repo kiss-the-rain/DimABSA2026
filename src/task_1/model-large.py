@@ -7,6 +7,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 from dataclasses import dataclass
 from pathlib import Path
+import json
 import sys
 import random, numpy as np, pandas as pd
 import torch, torch.nn as nn, torch.nn.functional as F
@@ -23,7 +24,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
-from src.utils.paths import output_path
+from src.utils.paths import output_path, data_path
 from transformers.utils.logging import set_verbosity_error
 
 
@@ -31,7 +32,7 @@ from transformers.utils.logging import set_verbosity_error
 @dataclass
 # 存储参数
 class Config:
-    local_model_dir: str = "models/roberta-base"
+    local_model_dir: str = "/home/cuizhibin/projects/Models/roberta-large"
     max_len: int = 512
     # 优化与正则
     lr_encoder: float = 1e-5
@@ -45,7 +46,7 @@ class Config:
     batch_size: int = 32
     freeze_epochs: int = 1
     enc_lr_after_unfreeze: float = 6e-6  # 解冻后 encoder 更小 LR
-    patience: int = 4
+    patience: int = 3
     use_huber: bool = True
 
     seed: int = 42
@@ -429,12 +430,61 @@ def predict_dev(model, dev_df, tok, cfg: Config):
 
 
 def save_jsonl(objs, path):
-    import json
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as w:
         for o in objs:
             w.write(json.dumps(o, ensure_ascii=False) + "\n")
+
+def _load_domain_ids(path: Path, domain_name: str) -> dict:
+    if not path.exists():
+        return {}
+    mapping = {}
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            rid = obj.get("ID") or obj.get("id") or obj.get("Id")
+            if rid is None:
+                continue
+            mapping[str(rid)] = domain_name
+    return mapping
+
+def _infer_domain_from_id(rid: str) -> str | None:
+    s = str(rid).lower()
+    if "lap" in s:
+        return "laptop"
+    if "rest" in s or "res" in s:
+        return "restaurant"
+    return None
+
+def build_domain_map(dev_df: pd.DataFrame) -> dict:
+    if "domain" in dev_df.columns:
+        return (
+            dev_df[["id", "domain"]]
+            .drop_duplicates("id")
+            .set_index("id")["domain"]
+            .astype(str)
+            .str.strip()
+            .str.lower()
+            .to_dict()
+        )
+    domain_map = {}
+    for lang in ("eng", "zho"):
+        for domain_name in ("laptop", "restaurant"):
+            path = data_path("track_a", "subtask_1", lang, f"{lang}_{domain_name}_dev_task1.jsonl")
+            domain_map.update(_load_domain_ids(path, domain_name))
+    if domain_map:
+        return domain_map
+    if "id" not in dev_df.columns:
+        return {}
+    ids = dev_df["id"].astype(str).tolist()
+    return {rid: d for rid in ids if (d := _infer_domain_from_id(rid)) is not None}
 
 
 # ================= 主流程 =================
@@ -538,23 +588,24 @@ def main():
     model.load_state_dict(ckpt["state_dict"])
     # 调用预测函数，输出JSONL列表
     preds = predict_dev(model, dev_df, tok, cfg)
-    pred_df = pd.DataFrame(preds)
-
-    def _norm_domain(name: str) -> str:
-        return str(name).strip().lower()
-
-    if "domain" not in pred_df.columns:
-        raise KeyError("dev_pairs.parquet 缺少 domain 字段，无法拆分 laptop/restaurant")
+    domain_map = build_domain_map(dev_df)
+    if not domain_map:
+        raise KeyError("dev_pairs.parquet 缺少 domain 字段，且无法从原始 dev JSONL 或 ID 推断")
 
     for domain_name, file_name in [
         ("laptop", "pred_eng_laptop.jsonl"),
         ("restaurant", "pred_eng_restaurant.jsonl"),
     ]:
-        sub_df = pred_df[pred_df["domain"].map(_norm_domain) == domain_name]
-        lines = sub_df[["ID", "Aspect_VA"]].to_dict(orient="records")
+        lines = [
+            p for p in preds if domain_map.get(p.get("ID")) == domain_name
+        ]
         out_file = output_path("submit", "task1", file_name)
         save_jsonl(lines, out_file)
         print(f"Dev 提交文件 -> {out_file} ({domain_name}: {len(lines)})")
+
+    missing = [p for p in preds if domain_map.get(p.get("ID")) is None]
+    if missing:
+        print(f"[WARN] 无法判定 domain 的样本数: {len(missing)}，已跳过写入")
 
 
 if __name__ == "__main__":

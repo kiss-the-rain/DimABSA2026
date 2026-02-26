@@ -18,9 +18,9 @@ from src.utils.paths import data_path, output_path
 
 
 # ========= 读取（按你给的方式） =========
-lp_dev   = data_path("track_a", "subtask_1", "eng", "eng_laptop_dev_task1.jsonl")
+lp_dev   = data_path("track_a", "subtask_1", "eng", "eng_laptop_test_task1.jsonl")
 lp_train = data_path("track_a", "subtask_1", "eng", "eng_laptop_train_alltasks.jsonl")
-rs_dev   = data_path("track_a", "subtask_1", "eng", "eng_restaurant_dev_task1.jsonl")
+rs_dev   = data_path("track_a", "subtask_1", "eng", "eng_restaurant_test_task1.jsonl")
 rs_train = data_path("track_a", "subtask_1", "eng", "eng_restaurant_train_alltasks.jsonl")
 
 for p in [lp_dev, lp_train, rs_dev, rs_train]:
@@ -161,8 +161,17 @@ def build_dev_table(dfs: List[pd.DataFrame], source_names: List[str]) -> pd.Data
                     aspects = [aspects]
                 if isinstance(aspects, list):
                     for asp in aspects:
-                        asp = normalize_keep_emphasis(asp)  # 去掉强调符号，但不改大小写/词形
-                        rows.append({"id": rid, "text": text, "aspect": asp, "source": src})
+                        asp_raw = "" if asp is None else str(asp)
+                        asp = normalize_keep_emphasis(asp_raw)  # 去掉强调符号，但不改大小写/词形
+                        rows.append(
+                            {
+                                "id": rid,
+                                "text": text,
+                                "aspect": asp,
+                                "aspect_raw": asp_raw,
+                                "source": src,
+                            }
+                        )
                     emitted = True
 
             # 2) 否则尝试从 Quadruplet 推断（兼容 dict/list）
@@ -172,16 +181,33 @@ def build_dev_table(dfs: List[pd.DataFrame], source_names: List[str]) -> pd.Data
                     quads = [quads]
                 if quads:
                     for q in quads:
-                        asp = normalize_keep_emphasis(q.get("Aspect", "NULL") or "NULL")
-                        rows.append({"id": rid, "text": text, "aspect": asp, "source": src})
+                        asp_raw = q.get("Aspect", "NULL") or "NULL"
+                        asp = normalize_keep_emphasis(asp_raw)
+                        rows.append(
+                            {
+                                "id": rid,
+                                "text": text,
+                                "aspect": asp,
+                                "aspect_raw": asp_raw,
+                                "source": src,
+                            }
+                        )
                     emitted = True
 
             # 3) 仍无可用 Aspect，则填充占位
             if not emitted:
-                rows.append({"id": rid, "text": text, "aspect": "NULL", "source": src})
+                rows.append(
+                    {
+                        "id": rid,
+                        "text": text,
+                        "aspect": "NULL",
+                        "aspect_raw": "NULL",
+                        "source": src,
+                    }
+                )
 
     df_out = pd.DataFrame(rows)
-    cols = ["id", "text", "aspect", "source"]
+    cols = ["id", "text", "aspect", "aspect_raw", "source"]
     return df_out[cols].reset_index(drop=True)
 
 
