@@ -1,0 +1,114 @@
+cls消融
+
+(qwen3_1.7b) cuizhibin@star-desktop:~/projects/DimABSA2026$ python src/task_1/model_ablation.py \
+  --local_model_dir /home/cuizhibin/projects/Models/deberta-v3-large/snapshots/64a8c8eab3e352a784c658aef62be1662607476f \
+  --pooling cls --loss huber --seed 42
+[TAG] pool-cls_loss-huber_seed-42
+[CKPT] /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt
+[PRED] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-cls_loss-huber_seed-42_eng_laptop.jsonl
+[PRED] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-cls_loss-huber_seed-42_eng_restaurant.jsonl
+[EVAL] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/eval_pool-cls_loss-huber_seed-42.json
+[DEVICE] cuda
+Epoch 01 | train_loss=0.0192 rmse=2.189 || val_loss=0.0339 rmse=2.035
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt (rmse=2.035)
+Epoch 02 | train_loss=0.0116 rmse=1.676 || val_loss=0.0131 rmse=1.266
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt (rmse=1.266)
+Epoch 03 | train_loss=0.0059 rmse=1.209 || val_loss=0.0097 rmse=1.081
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt (rmse=1.081)
+Epoch 04 | train_loss=0.0045 rmse=1.051 || val_loss=0.0090 rmse=1.044
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt (rmse=1.044)
+Epoch 05 | train_loss=0.0039 rmse=0.971 || val_loss=0.0089 rmse=1.037
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt (rmse=1.037)
+Epoch 06 | train_loss=0.0033 rmse=0.902 || val_loss=0.0096 rmse=1.082
+Epoch 07 | train_loss=0.0029 rmse=0.836 || val_loss=0.0087 rmse=1.027
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt (rmse=1.027)
+Epoch 08 | train_loss=0.0025 rmse=0.777 || val_loss=0.0086 rmse=1.019
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-cls_loss-huber_seed-42.pt (rmse=1.019)
+Epoch 09 | train_loss=0.0022 rmse=0.737 || val_loss=0.0087 rmse=1.025
+Epoch 10 | train_loss=0.0020 rmse=0.702 || val_loss=0.0090 rmse=1.038
+Epoch 11 | train_loss=0.0018 rmse=0.669 || val_loss=0.0090 rmse=1.040
+[EARLY STOP] no improvement for 3 epochs.
+[WRITE] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-cls_loss-huber_seed-42_eng_laptop.jsonl (laptop: 1000)
+[WRITE] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-cls_loss-huber_seed-42_eng_restaurant.jsonl (restaurant: 1000)
+
+===== Task1 Eval: eng-laptop =====
+RMSE(VA)   : 1.312678
+Gold tuples: 1421
+Pred tuples: 1421
+Matched    : 1421
+Missing    : 0
+Extra      : 0
+
+===== Task1 Eval: eng-restaurant =====
+RMSE(VA)   : 1.233362
+Gold tuples: 1504
+Pred tuples: 1504
+Matched    : 1504
+Missing    : 0
+Extra      : 0
+
+===== Task1 Overall (weighted) =====
+RMSE(VA): 1.272513
+[EVAL SAVED] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/eval_pool-cls_loss-huber_seed-42.json
+
+MSE消融
+(qwen3_1.7b) cuizhibin@star-desktop:~/projects/DimABSA2026$ python src/task_1/model_ablation2.py   --local_model_dir /home/cuizhibin/projects/Models/deberta-v3-large/snapshots/64a8c8eab3e352a784c658aef62be1662607476f   --pooling mean --loss mse --seed 42
+[TAG] pool-mean_loss-mse_seed-42
+[CKPT] /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-mean_loss-mse_seed-42.pt
+[PRED] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-mean_loss-mse_seed-42_eng_laptop.jsonl
+[PRED] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-mean_loss-mse_seed-42_eng_restaurant.jsonl
+[EVAL] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/eval_pool-mean_loss-mse_seed-42.json
+[DEVICE] cuda
+Epoch 01 | train_loss=0.0379 rmse=2.164 || val_loss=0.0284 rmse=1.854
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-mean_loss-mse_seed-42.pt (rmse=1.854)
+Epoch 02 | train_loss=0.0181 rmse=1.484 || val_loss=0.0116 rmse=1.187
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-mean_loss-mse_seed-42.pt (rmse=1.187)
+Epoch 03 | train_loss=0.0102 rmse=1.118 || val_loss=0.0094 rmse=1.070
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-mean_loss-mse_seed-42.pt (rmse=1.070)
+Epoch 04 | train_loss=0.0077 rmse=0.974 || val_loss=0.0096 rmse=1.079
+Epoch 05 | train_loss=0.0064 rmse=0.884 || val_loss=0.0090 rmse=1.039
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-mean_loss-mse_seed-42.pt (rmse=1.039)
+Epoch 06 | train_loss=0.0053 rmse=0.805 || val_loss=0.0103 rmse=1.115
+Epoch 07 | train_loss=0.0046 rmse=0.741 || val_loss=0.0090 rmse=1.037
+[BEST] saved -> /home/cuizhibin/projects/DimABSA2026/data/checkpoints/task1/best_pool-mean_loss-mse_seed-42.pt (rmse=1.037)
+Epoch 08 | train_loss=0.0041 rmse=0.701 || val_loss=0.0096 rmse=1.073
+Epoch 09 | train_loss=0.0036 rmse=0.659 || val_loss=0.0097 rmse=1.083
+Epoch 10 | train_loss=0.0033 rmse=0.629 || val_loss=0.0096 rmse=1.077
+[EARLY STOP] no improvement for 3 epochs.
+[WRITE] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-mean_loss-mse_seed-42_eng_laptop.jsonl (laptop: 1000)
+[WRITE] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/pred_pool-mean_loss-mse_seed-42_eng_restaurant.jsonl (restaurant: 1000)
+
+===== Task1 Eval: eng-laptop =====
+RMSE(VA)   : 1.309233
+Gold tuples: 1421
+Pred tuples: 1421
+Matched    : 1421
+Missing    : 0
+Extra      : 0
+
+===== Task1 Eval: eng-restaurant =====
+RMSE(VA)   : 1.227718
+Gold tuples: 1504
+Pred tuples: 1504
+Matched    : 1504
+Missing    : 0
+Extra      : 0
+
+===== Task1 Overall (weighted) =====
+RMSE(VA): 1.267974
+[EVAL SAVED] /home/cuizhibin/projects/DimABSA2026/data/submit/task1/eval_pool-mean_loss-mse_seed-42.json
+
+
+task2
+[PRED] 1900/2000
+[PRED] 1950/2000
+[PRED] 2000/2000
+[WRITE] /home/cuizhibin/projects/DimABSA2026/data/submit/task2/pred_task2_spanrec-off_seed-42_eng_laptop.jsonl
+[WRITE] /home/cuizhibin/projects/DimABSA2026/data/submit/task2/pred_task2_spanrec-off_seed-42_eng_restaurant.jsonl
+[DEBUG] /home/cuizhibin/projects/DimABSA2026/data/debug/task2_raw_generations_task2_spanrec-off_seed-42.jsonl
+
+===== Task2 Official-like Eval (cF1) =====
+[Laptop] cP=0.4155 cR=0.3664 cF1=0.3894
+[Rest  ] cP=0.0000 cR=0.0000 cF1=0.0000
+[OVERALL] cP=0.4155 cR=0.3664 cF1=0.3894
+[EVAL SAVED] /home/cuizhibin/projects/DimABSA2026/data/submit/task2/eval_task2_spanrec-off_seed-42.json

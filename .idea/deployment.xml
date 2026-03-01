@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="cuizhibin@100.125.56.65:22 password (3)" useTempFile="true" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="cuizhibin@100.125.56.65:22 password (3)" useTempFile="true" confirmBeforeDeletion="false" autoUploadExternalChanges="true">
+    <option name="confirmBeforeDeletion" value="false" />
     <serverData>
       <paths name="A6000">
         <serverdata>

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-# 离线版：本地加载 roberta-base（不访问外网），含早停/冻结解冻/动态 padding/AMP 自适应
 import os
 
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
@@ -106,7 +104,7 @@ def build_inputs(tok, text: str, aspect: str, max_len: int):
 class TrainDataset(Dataset):
     def __init__(self, df: pd.DataFrame, max_len: int, tok):
         '''
-        df：你的训练表，至少含 text, aspect, v, a 四列。
+        df：训练表，至少含 text, aspect, v, a 四列。
         reset_index(drop=True)：把 DataFrame 索引整理成 0..N-1 升序，避免花式索引造成 iloc 慢或报错。
         tok：HuggingFace 的 tokenizer 对象。
         max_len：编码后的最大长度（包含特殊符号）。

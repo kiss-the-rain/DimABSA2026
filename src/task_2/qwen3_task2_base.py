@@ -1,8 +1,9 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Dict, Any
+import sys
 
 import json, random, math, os, re
 import numpy as np
@@ -26,7 +27,10 @@ from peft import (
     prepare_model_for_kbit_training,
 )
 
-# 你项目里的路径工具
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
 from src.utils.paths import data_path, output_path
 
 
@@ -38,7 +42,6 @@ class Config:
     base_model: str = "/home/cuizhibin/projects/Models/Qwen3-4B-Instruct-2507-bnb-4bit"
     max_seq_len: int = 512                # 指令 + 文本 + 标签 的最大长度
 
-    # 如果你想先用 FP16/BF16 全精度，不想折腾 4bit，设为 False 即可
     use_4bit: bool = True                 # True = QLoRA (bitsandbytes), False = 常规 LoRA
 
     lora_r: int = 16                       # LoRA rank（低秩分解维度）
@@ -47,15 +50,16 @@ class Config:
 
     # —— 训练超参 ——
     epochs: int = 3
-    train_batch_size: int = 8              # per-device batch size
-    eval_batch_size: int = 4
+    train_batch_size: int = 2              # per-device batch size
+    eval_batch_size: int = 2
     grad_accum_steps: int = 4              # 梯度累积步数
-    learning_rate: float = 1e-4
+    learning_rate: float = 8e-5
     warmup_ratio: float = 0.03
     weight_decay: float = 0.01
     max_grad_norm: float = 1.0
 
     logging_steps: int = 50
+    num_workers: int =10
 
     # —— 解码 ——（预测 dev_task2 用）
     gen_max_new_tokens: int = 256
@@ -241,7 +245,7 @@ def build_dataset_dict(cfg: Config) -> DatasetDict:
 
 def load_qwen3_and_tokenizer(cfg: Config):
     """
-    用 transformers + peft 加载 Qwen3-1.7B，并挂 LoRA。
+    用 transformers + peft 加载 Qwen3，并挂 LoRA。
     """
 
     # 读一下 config，确认本地模型没问题
@@ -379,15 +383,23 @@ def train_qwen3_task2(cfg: Config):
     train_ds = dsd["train"]
     dev_ds   = dsd["dev"]
 
+    num_workers = max(0, int(cfg.num_workers))
+    pin_mem = device.type == "cuda"
     train_loader = DataLoader(
         train_ds,
         batch_size = cfg.train_batch_size,
         shuffle = True,
+        num_workers = num_workers,
+        pin_memory = pin_mem,
+        persistent_workers = (num_workers > 0),
     )
     dev_loader = DataLoader(
         dev_ds,
         batch_size = cfg.eval_batch_size,
         shuffle = False,
+        num_workers = num_workers,
+        pin_memory = pin_mem,
+        persistent_workers = (num_workers > 0),
     )
 
     # 4) 优化器 & scheduler（只训练 LoRA 参数）
@@ -482,7 +494,7 @@ def train_qwen3_task2(cfg: Config):
 
 def load_lora_model(save_dir: Path, cfg: Config):
     """
-    加载基础 Qwen3-1.7B + 已训练好的 LoRA 适配器。
+    加载基础 Qwen3 + 已训练好的 LoRA 适配器。
     """
     tokenizer = AutoTokenizer.from_pretrained(
         cfg.base_model,
@@ -572,21 +584,22 @@ def predict_for_split(model, tokenizer, split_name: str, cfg: Config):
     for path in [lp_dev, rs_dev]:
         assert Path(path).exists(), f"未找到 dev 文件: {path}"
 
-    inputs: List[Dict[str, Any]] = []
-    for path in [lp_dev, rs_dev]:
+    inputs: List[tuple[Dict[str, Any], str]] = []
+    for domain_name, path in [("laptop", lp_dev), ("restaurant", rs_dev)]:
         for obj in read_jsonl(Path(path)):
-            inputs.append(obj)
+            inputs.append((obj, domain_name))
 
     print(f"[INFO] 预测样本数: {len(inputs)}")
 
-    results: List[Dict[str, Any]] = []
+    lp_results: List[Dict[str, Any]] = []
+    rs_results: List[Dict[str, Any]] = []
 
     # 调试文件：记录模型原始输出
     debug_path = Path(output_path("debug", "task2_raw_generations.jsonl"))
     debug_path.parent.mkdir(parents=True, exist_ok=True)
     debug_f = debug_path.open("w", encoding="utf-8")
 
-    for idx, obj in enumerate(inputs, 1):
+    for idx, (obj, domain_name) in enumerate(inputs, 1):
         text_id = obj.get("ID", "")
         text = obj.get("Text", "")
 
@@ -680,14 +693,18 @@ def predict_for_split(model, tokenizer, split_name: str, cfg: Config):
                 }
             )
 
-        results.append({"ID": text_id, "Triplet": fixed_triplets})
+        line = {"ID": text_id, "Triplet": fixed_triplets}
+        if domain_name == "laptop":
+            lp_results.append(line)
+        else:
+            rs_results.append(line)
 
         if idx % 20 == 0 or idx == len(inputs):
             print(f"[PRED] 已完成 {idx}/{len(inputs)} 样本")
 
     debug_f.close()
     print(f"[DEBUG] 原始生成结果已写入: {debug_path}")
-    return results
+    return lp_results, rs_results
 
 
 def save_jsonl(objs: List[Dict[str, Any]], path: Path):
@@ -708,11 +725,14 @@ def main():
     # 2) 加载 LoRA + 做 dev_task2 预测
     model, tokenizer = load_lora_model(save_dir, cfg)
 
-    preds = predict_for_split(model, tokenizer, split_name="dev_task2", cfg=cfg)
+    lp_preds, rs_preds = predict_for_split(model, tokenizer, split_name="test_task2", cfg=cfg)
 
-    out_path = Path(output_path("submit", "task2", "qwen3_task2_dev_pred.jsonl"))
-    save_jsonl(preds, out_path)
-    print("[INFO] Dev 提交文件已生成:", out_path)
+    out_lp = Path(output_path("submit", "task2", "qwen3_task2_dev_pred_laptop.jsonl"))
+    out_rs = Path(output_path("submit", "task2", "qwen3_task2_dev_pred_restaurant.jsonl"))
+    save_jsonl(lp_preds, out_lp)
+    save_jsonl(rs_preds, out_rs)
+    print("[INFO] Dev 提交文件已生成:", out_lp)
+    print("[INFO] Dev 提交文件已生成:", out_rs)
 
 
 if __name__ == "__main__":

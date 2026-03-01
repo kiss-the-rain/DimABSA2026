@@ -37,7 +37,7 @@ from peft import (
     prepare_model_for_kbit_training,
 )
 
-# 你项目里的路径工具
+
 from src.utils.paths import data_path, output_path
 
 
@@ -49,7 +49,6 @@ class Config:
     base_model: str = "/home/cuizhibin/projects/Models/Qwen3-4B-Instruct-2507-bnb-4bit"
     max_seq_len: int = 512                # 指令 + 文本 + 标签 的最大长度
 
-    # 如果你想先用 FP16/BF16 全精度，不想折腾 4bit，设为 False 即可
     use_4bit: bool = True                # True = QLoRA (bitsandbytes), False = 常规 LoRA
 
     lora_r: int = 16                      # LoRA rank（低秩分解维度）
